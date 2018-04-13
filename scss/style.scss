@@ -1,15 +1,16 @@
-//Imported, but not included in the stylesheet
+/* Imported, but not included in the stylesheet */
 
 @import 'variables';
 @import 'mixins';
 
-//Complied in the stylesheet
+/* Complied in the stylesheet */
 
 @import 'reset';
 @import 'fonts';
+@import 'globals';
 @import 'typography';
 @import 'header';
+@import 'navigation';
 @import 'content';
 @import 'page-templates';
 @import 'footer';
-@import 'globals';

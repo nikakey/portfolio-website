@@ -1,0 +1,24 @@
+
+
+
+
+
+
+
+/* Tablet width */
+
+@mixin tablet {
+  @media screen and (min-width: $width__tablet) 
+  {
+    @content;
+  }
+}
+
+/* Desktop width */
+
+@mixin desktop {
+  @media screen and (min-width: $width__desktop) 
+  {
+    @content;
+  }
+}
