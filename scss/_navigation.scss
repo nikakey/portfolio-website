@@ -1,18 +1,1 @@
 /* MENU AND NAVIGATION */
-
-#menu {
-  display: none;
-}
-
-.slicknav_menu {
-  @include desktop {
-    display: none;
-  }
-}
-
-.site-nav {
-  display: none;
-  @include desktop {
-    display: block;
-  }
-}

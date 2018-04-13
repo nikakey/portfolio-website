@@ -1,0 +1,13 @@
+
+#menu {
+  display: none;
+}
+
+header {
+  .site-nav {
+    display: none;
+    @include desktop {
+      display: block;
+    }
+  }
+}
