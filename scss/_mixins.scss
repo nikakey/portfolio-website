@@ -23,3 +23,9 @@
     @content;
   }
 }
+
+/* CENTER BLOCK */
+
+@mixin center-block {
+  margin: 0 auto;
+}

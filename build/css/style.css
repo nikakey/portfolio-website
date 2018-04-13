@@ -6,6 +6,7 @@
 /* REM OUTPUT WITH PX FALLBACK */
 /* TABLET WIDTH */
 /* DESKTOP WIDTH */
+/* CENTER BLOCK */
 /* Complied in the stylesheet */
 /* RESET STYLES */
 html, body, div, span, applet, object, iframe,
@@ -112,7 +113,9 @@ html {
 
 body {
   background: #fff;
-  /* Fallback for when there is no custom background color defined. */ }
+  /* Fallback for when there is no custom background color defined. */
+  max-width: 1440px;
+  margin: 0 auto; }
 
 img {
   height: auto;

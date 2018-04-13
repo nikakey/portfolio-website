@@ -22,7 +22,9 @@ html {
 }
 
 body {
-	background: #fff; /* Fallback for when there is no custom background color defined. */
+  background: #fff; /* Fallback for when there is no custom background color defined. */
+  max-width: 1440px;
+  @include center-block;
 }
 
 img {
