@@ -9,3 +9,23 @@
   position: absolute;
   width: 1px;
 }
+
+html {
+	box-sizing: border-box;
+	@include font-size(1);
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	background: #fff; /* Fallback for when there is no custom background color defined. */
+}
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	width: 100%; /* Adhere to container width. */
+}

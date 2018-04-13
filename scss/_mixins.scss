@@ -1,11 +1,12 @@
 
+/* REM OUTPUT WITH PX FALLBACK */
 
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
 
-
-
-
-
-/* Tablet width */
+/* TABLET WIDTH */
 
 @mixin tablet {
   @media screen and (min-width: $width__tablet) 
@@ -14,7 +15,7 @@
   }
 }
 
-/* Desktop width */
+/* DESKTOP WIDTH */
 
 @mixin desktop {
   @media screen and (min-width: $width__desktop) 

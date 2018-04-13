@@ -1,0 +1,26 @@
+
+/* TYPOGRAPHY */
+
+body,
+button,
+input,
+select,
+textarea {
+	font-family: $font__main;
+	line-height: $font__line-height-body;
+}
+
+/* HEADINGS */
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
+
+h2 {
+	@include font-size(7.5);
+	font-family: $font__titles;
+}
+
+h3 {
+	@include font-size(2);
+}
