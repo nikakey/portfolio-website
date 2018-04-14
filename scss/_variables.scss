@@ -5,13 +5,24 @@ $base__space-unit: 1.5rem;
 
 /* COLORS */
 
+$color__main-basic: #ffffff;
+$color__main-text: #38556B;
+$color__brand-light: #FAF6E6;
+$color__brand-light-second: #E5E4F0;
+$color__brand-light-third: #F2D0D4;
+$color__brand-dark: #62A9C7;
+$color__brand-dark-second: #A6D0E0;
 
+/* BORDERS */
+
+$border__solid: 1px solid $color__brand-light;
 
 /* TYPOGRAPHY */
 
 $font__main: 'Open Sans', sans-serif;
 $font__titles: 'Chelsea Market', sans-serif;
 $font__line-height-body: 1.5;
+$text__letter-spacing: 3px;
 
 /* SCREENS */
 

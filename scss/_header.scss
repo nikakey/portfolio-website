@@ -3,11 +3,47 @@
   display: none;
 }
 
-header {
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  background: $color__brand-dark;
+  text-transform: uppercase;
+  letter-spacing: $text__letter-spacing;
+	color: $color__main-basic;
   .site-nav {
     display: none;
     @include desktop {
       display: block;
+      ul {
+        li {
+          display: inline;
+          margin: 0 .75rem 0 .75rem;
+          a {
+            color: $color__main-basic;
+            padding: .15rem .25rem;
+            &:hover {
+              background: $color__main-basic;
+              color: $color__brand-dark;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .socials {
+    ul {
+      li {
+        display: inline;
+        margin: 0 .5rem 0 .5rem;
+        a {
+          color: $color__main-basic;
+          &:hover {
+            color: $color__main-text;
+          }
+        }
+      }
     }
   }
 }

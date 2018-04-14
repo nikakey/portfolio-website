@@ -1,6 +1,7 @@
 /* Imported, but not included in the stylesheet */
 /* STRUCTURE */
 /* COLORS */
+/* BORDERS */
 /* TYPOGRAPHY */
 /* SCREENS */
 /* REM OUTPUT WITH PX FALLBACK */
@@ -148,13 +149,45 @@ h3 {
 #menu {
   display: none; }
 
-header .site-nav {
-  display: none; }
-  @media screen and (min-width: 1080px) {
-    header .site-nav {
-      display: block; } }
+.site-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5rem;
+  background: #62A9C7;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #ffffff; }
+  .site-header .site-nav {
+    display: none; }
+    @media screen and (min-width: 1080px) {
+      .site-header .site-nav {
+        display: block; }
+        .site-header .site-nav ul li {
+          display: inline;
+          margin: 0 .75rem 0 .75rem; }
+          .site-header .site-nav ul li a {
+            color: #ffffff;
+            padding: .15rem .25rem; }
+            .site-header .site-nav ul li a:hover {
+              background: #ffffff;
+              color: #62A9C7;
+              border-radius: 5px; } }
+  .site-header .socials ul li {
+    display: inline;
+    margin: 0 .5rem 0 .5rem; }
+    .site-header .socials ul li a {
+      color: #ffffff; }
+      .site-header .socials ul li a:hover {
+        color: #38556B; }
 
-/* MENU AND NAVIGATION */
+/* LINKS */
+a {
+  text-decoration: none; }
+
 .slicknav_btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -162,10 +195,9 @@ header .site-nav {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  line-height: 1.125em;
   cursor: pointer; }
   .slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar {
-    margin-top: 0.188em; }
+    margin-top: .188rem; }
 
 .slicknav_menu {
   *zoom: 1; }
@@ -173,16 +205,15 @@ header .site-nav {
     .slicknav_menu {
       display: none; } }
   .slicknav_menu .slicknav_menutxt {
-    display: block;
-    line-height: 1.188em; }
+    display: block; }
   .slicknav_menu .slicknav_icon {
-    width: 1.125em;
-    height: 0.875em;
-    margin: 0.188em 0 0 0.438em; }
+    width: 1.125rem;
+    height: .875rem;
+    margin: .35rem 0 0 .5rem; }
     .slicknav_menu .slicknav_icon:before {
       background: transparent;
-      width: 1.125em;
-      height: 0.875em;
+      width: 1.125rem;
+      height: .875rem;
       display: block;
       content: "";
       position: absolute; }
@@ -190,11 +221,9 @@ header .site-nav {
     margin: 0; }
   .slicknav_menu .slicknav_icon-bar {
     display: block;
-    width: 1.125em;
-    height: 0.125em;
-    border-radius: 1px;
-    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); }
+    width: 1.125rem;
+    height: .125rem;
+    border-radius: 1px; }
 
 .slicknav_nav {
   clear: both; }
@@ -206,22 +235,18 @@ header .site-nav {
     display: block; }
 
 .slicknav_menu {
-  font-size: 16px;
-  background: #4c4c4c;
+  background: #62A9C7;
   width: 50%; }
   .slicknav_menu .slicknav_menutxt {
-    color: #fff;
-    font-weight: bold;
-    text-shadow: 0 1px 3px #000; }
+    color: #ffffff; }
   .slicknav_menu .slicknav_icon-bar {
-    background-color: #fff; }
+    background-color: #ffffff; }
 
 .slicknav_btn {
-  text-decoration: none;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); }
+  text-decoration: none; }
 
 .slicknav_nav {
-  color: #fff;
+  color: #ffffff;
   margin: 0;
   padding: 0;
   font-size: 0.875em;
@@ -231,11 +256,17 @@ header .site-nav {
     list-style: none;
     overflow: hidden;
     padding: 0; }
-  .slicknav_nav a {
-    text-align: center;
-    text-decoration: none;
-    color: #fff; }
-    .slicknav_nav a:hover {
-      border-radius: 6px;
-      background: #ccc;
-      color: #222; }
+    .slicknav_nav ul li {
+      border-top: 1px solid #FAF6E6;
+      margin: 0 3px; }
+      .slicknav_nav ul li:first-child {
+        border-top: 0; }
+    .slicknav_nav ul a {
+      text-align: center;
+      text-decoration: none;
+      color: #ffffff;
+      padding-top: .5rem;
+      padding-bottom: .5rem; }
+      .slicknav_nav ul a:hover {
+        background: #E5E4F0;
+        color: #38556B; }
