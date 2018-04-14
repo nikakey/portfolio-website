@@ -39,9 +39,13 @@
           margin-top: 2rem;
           margin-bottom: 0;
           margin-right: 3rem;
+          @include font-size(1.15);
           &:last-child {
             margin-right: 0;
           }
+        }
+        @include desktop {
+          @include font-size(1.25);
         }
         span {
           color: $color__main-text;

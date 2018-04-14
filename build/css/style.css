@@ -347,9 +347,15 @@ a {
           .site-footer .contacts .contact-links a {
             margin-top: 2rem;
             margin-bottom: 0;
-            margin-right: 3rem; }
+            margin-right: 3rem;
+            font-size: 18.4px;
+            font-size: 1.15rem; }
             .site-footer .contacts .contact-links a:last-child {
               margin-right: 0; } }
+        @media screen and (min-width: 1080px) {
+          .site-footer .contacts .contact-links a {
+            font-size: 20px;
+            font-size: 1.25rem; } }
         .site-footer .contacts .contact-links a span {
           color: #032a47;
           margin-left: 1rem; }
