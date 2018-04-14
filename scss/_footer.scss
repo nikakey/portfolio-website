@@ -1,0 +1,68 @@
+.site-footer {
+  background: linear-gradient(lighten($color__brand-dark, 2%), transparent), url("../../images/footer-background.jpg") top center no-repeat;
+  background-size: 100%, cover;
+  height: 400px;
+  padding: 1rem;
+  position: relative;
+  @include tablet {
+    background-position: center;
+  }
+  .contacts {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h2 {
+      text-transform: lowercase;
+      padding-top: 2rem;
+      margin-bottom: .5rem;
+      color: $color__main-basic;
+      @include tablet {
+        @include font-size(3.75);
+      }
+      @include desktop {
+        @include font-size(5);
+      }
+    }
+    .contact-links {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      @include tablet {
+        flex-direction: row;
+      }
+      a {
+        margin-top: .75rem;
+        margin-bottom: .75rem;
+        color: $color__main-basic;
+        @include tablet {
+          margin-top: 2rem;
+          margin-bottom: 0;
+          margin-right: 3rem;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+        span {
+          color: $color__main-text;
+          margin-left: 1rem;
+        }
+        &:hover {
+          color: $color__main-text;
+          span {
+            color: $color__main-basic;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    position: absolute;
+    bottom: 2%;
+    p {
+      color: $color__main-basic;
+      @include font-size(.75);
+    }
+  }
+  
+}

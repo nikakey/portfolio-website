@@ -137,14 +137,30 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
+h1 {
+  font-family: "Chelsea Market", sans-serif;
+  font-size: 80px;
+  font-size: 5rem; }
+  @media screen and (min-width: 1080px) {
+    h1 {
+      font-size: 120px;
+      font-size: 7.5rem; } }
+
 h2 {
-  font-size: 120px;
-  font-size: 7.5rem;
-  font-family: "Chelsea Market", sans-serif; }
+  font-family: "Chelsea Market", sans-serif;
+  font-size: 40px;
+  font-size: 2.5rem; }
+  @media screen and (min-width: 1080px) {
+    h2 {
+      font-size: 60px;
+      font-size: 3.75rem; } }
 
 h3 {
   font-size: 32px;
   font-size: 2rem; }
+
+p {
+  color: #032a47; }
 
 #menu {
   display: none; }
@@ -182,7 +198,7 @@ h3 {
     .site-header .socials ul li a {
       color: #ffffff; }
       .site-header .socials ul li a:hover {
-        color: #38556B; }
+        color: #032a47; }
 
 /* LINKS */
 a {
@@ -269,4 +285,82 @@ a {
       padding-bottom: .5rem; }
       .slicknav_nav ul a:hover {
         background: #E5E4F0;
-        color: #38556B; }
+        color: #032a47; }
+
+.site-footer {
+  background: -webkit-gradient(linear, left top, left bottom, from(#6aadca), to(transparent)), url("../../images/footer-background.jpg") top center no-repeat;
+  background: linear-gradient(#6aadca, transparent), url("../../images/footer-background.jpg") top center no-repeat;
+  background-size: 100%, cover;
+  height: 400px;
+  padding: 1rem;
+  position: relative; }
+  @media screen and (min-width: 600px) {
+    .site-footer {
+      background-position: center; } }
+  .site-footer .contacts {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .site-footer .contacts h2 {
+      text-transform: lowercase;
+      padding-top: 2rem;
+      margin-bottom: .5rem;
+      color: #ffffff; }
+      @media screen and (min-width: 600px) {
+        .site-footer .contacts h2 {
+          font-size: 60px;
+          font-size: 3.75rem; } }
+      @media screen and (min-width: 1080px) {
+        .site-footer .contacts h2 {
+          font-size: 80px;
+          font-size: 5rem; } }
+    .site-footer .contacts .contact-links {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+      @media screen and (min-width: 600px) {
+        .site-footer .contacts .contact-links {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row; } }
+      .site-footer .contacts .contact-links a {
+        margin-top: .75rem;
+        margin-bottom: .75rem;
+        color: #ffffff; }
+        @media screen and (min-width: 600px) {
+          .site-footer .contacts .contact-links a {
+            margin-top: 2rem;
+            margin-bottom: 0;
+            margin-right: 3rem; }
+            .site-footer .contacts .contact-links a:last-child {
+              margin-right: 0; } }
+        .site-footer .contacts .contact-links a span {
+          color: #032a47;
+          margin-left: 1rem; }
+        .site-footer .contacts .contact-links a:hover {
+          color: #032a47; }
+          .site-footer .contacts .contact-links a:hover span {
+            color: #ffffff; }
+  .site-footer .copyright {
+    position: absolute;
+    bottom: 2%; }
+    .site-footer .copyright p {
+      color: #ffffff;
+      font-size: 12px;
+      font-size: 0.75rem; }
