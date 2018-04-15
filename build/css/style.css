@@ -173,10 +173,13 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1.5rem;
-  background: #62A9C7;
+  background: #62a9c7;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #ffffff; }
+  color: white; }
+  @media screen and (min-width: 1080px) {
+    .site-header {
+      padding: 2rem; } }
   .site-header .site-nav {
     display: none; }
     @media screen and (min-width: 1080px) {
@@ -186,17 +189,17 @@ p {
           display: inline;
           margin: 0 .75rem 0 .75rem; }
           .site-header .site-nav ul li a {
-            color: #ffffff;
+            color: white;
             padding: .15rem .25rem; }
             .site-header .site-nav ul li a:hover {
-              background: #ffffff;
-              color: #62A9C7;
+              background: white;
+              color: #62a9c7;
               border-radius: 5px; } }
   .site-header .socials ul li {
     display: inline;
     margin: 0 .5rem 0 .5rem; }
     .site-header .socials ul li a {
-      color: #ffffff; }
+      color: white; }
       .site-header .socials ul li a:hover {
         color: #032a47; }
 
@@ -251,18 +254,18 @@ a {
     display: block; }
 
 .slicknav_menu {
-  background: #62A9C7;
+  background: #62a9c7;
   width: 50%; }
   .slicknav_menu .slicknav_menutxt {
-    color: #ffffff; }
+    color: white; }
   .slicknav_menu .slicknav_icon-bar {
-    background-color: #ffffff; }
+    background-color: white; }
 
 .slicknav_btn {
   text-decoration: none; }
 
 .slicknav_nav {
-  color: #ffffff;
+  color: white;
   margin: 0;
   padding: 0;
   font-size: 0.875em;
@@ -273,26 +276,68 @@ a {
     overflow: hidden;
     padding: 0; }
     .slicknav_nav ul li {
-      border-top: 1px solid #FAF6E6;
+      border-top: 1px solid #faf6e6;
       margin: 0 3px; }
       .slicknav_nav ul li:first-child {
         border-top: 0; }
     .slicknav_nav ul a {
       text-align: center;
       text-decoration: none;
-      color: #ffffff;
+      color: white;
       padding-top: .5rem;
       padding-bottom: .5rem; }
       .slicknav_nav ul a:hover {
-        background: #E5E4F0;
+        background: #e5e4f0;
         color: #032a47; }
 
+/* BANNER AREA */
+.site-banner {
+  height: 300px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#62a9c7), to(rgba(98, 169, 199, 0.6))), url("../../images/site-banner.jpg") bottom center no-repeat;
+  background: linear-gradient(#62a9c7, rgba(98, 169, 199, 0.6)), url("../../images/site-banner.jpg") bottom center no-repeat;
+  background-size: cover, cover; }
+  @media screen and (min-width: 1080px) {
+    .site-banner {
+      height: 100vh; } }
+  .site-banner h1 {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    text-align: center;
+    color: white;
+    width: 94%;
+    max-width: 400px;
+    margin: 0 auto; }
+    @media screen and (min-width: 1080px) {
+      .site-banner h1 {
+        padding: 9rem 0 0 2rem;
+        width: 46%;
+        max-width: unset;
+        text-align: right;
+        margin: 0; } }
+  .site-banner p {
+    color: white;
+    text-align: center;
+    width: 94%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: .5rem;
+    font-size: 18px;
+    font-size: 1.125rem; }
+    @media screen and (min-width: 1080px) {
+      .site-banner p {
+        font-size: 20px;
+        font-size: 1.25rem;
+        width: 46%;
+        max-width: unset;
+        text-align: right;
+        margin: 0;
+        padding: .5rem 0 .5rem 2rem; } }
+
 .site-footer {
-  background: -webkit-gradient(linear, left top, left bottom, from(#6aadca), to(transparent)), url("../../images/footer-background.jpg") top center no-repeat;
-  background: linear-gradient(#6aadca, transparent), url("../../images/footer-background.jpg") top center no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(#62a9c7), to(rgba(98, 169, 199, 0.6))), url("../../images/footer-background.jpg") top center no-repeat;
+  background: linear-gradient(#62a9c7, rgba(98, 169, 199, 0.6)), url("../../images/footer-background.jpg") top center no-repeat;
   background-size: 100%, cover;
   height: 400px;
-  padding: 1rem;
+  padding: 1.5rem;
   position: relative; }
   @media screen and (min-width: 600px) {
     .site-footer {
@@ -313,7 +358,7 @@ a {
       text-transform: lowercase;
       padding-top: 2rem;
       margin-bottom: .5rem;
-      color: #ffffff; }
+      color: white; }
       @media screen and (min-width: 600px) {
         .site-footer .contacts h2 {
           font-size: 60px;
@@ -342,7 +387,7 @@ a {
       .site-footer .contacts .contact-links a {
         margin-top: .75rem;
         margin-bottom: .75rem;
-        color: #ffffff; }
+        color: white; }
         @media screen and (min-width: 600px) {
           .site-footer .contacts .contact-links a {
             margin-top: 2rem;
@@ -362,11 +407,11 @@ a {
         .site-footer .contacts .contact-links a:hover {
           color: #032a47; }
           .site-footer .contacts .contact-links a:hover span {
-            color: #ffffff; }
+            color: white; }
   .site-footer .copyright {
     position: absolute;
     bottom: 2%; }
     .site-footer .copyright p {
-      color: #ffffff;
+      color: white;
       font-size: 12px;
       font-size: 0.75rem; }

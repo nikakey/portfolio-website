@@ -9,7 +9,10 @@
   background: $color__brand-dark;
   text-transform: uppercase;
   letter-spacing: $text__letter-spacing;
-	color: $color__main-basic;
+  color: $color__main-basic;
+  @include desktop {
+    padding: 2rem;
+  }
   .site-nav {
     display: none;
     @include desktop {
