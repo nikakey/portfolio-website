@@ -56,7 +56,8 @@
       padding: 3rem 1.5rem;
     }
     @include desktop {
-      padding: 5rem 2rem;
+      padding: 5rem 2rem 7rem 2rem;
+      border-bottom: 0;
     }
     h3 {
       text-align: center;
@@ -86,6 +87,11 @@
 .skills-wrapper {
   background: $color__brand-dark-second;
   padding: 3rem 1.5rem;
+  @include desktop {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 2rem 6rem 2rem;
+  }
   .skills {
     display: flex;
     align-items: center;
@@ -94,6 +100,12 @@
     border-bottom: $border__solid;
     @include tablet {
       justify-content: center;
+    }
+    @include desktop {
+      flex-direction: column;
+      padding-top: 0;
+      border-bottom: 0;
+      padding-bottom: 0;
     }
     &:first-child {
       padding-top: 0;
@@ -111,6 +123,14 @@
       @include tablet {
         max-width: 150px;
         width: unset;
+        padding: 0;
+      }
+      @include desktop {
+        max-width: 250px;
+        padding: 2rem;
+        border-radius: 50%;
+        background: $color__brand-dark-second;
+        margin-top: -50%;
       }
     }
     .skills-content {
@@ -118,11 +138,23 @@
       @include tablet {
         width: 30%;
       }
+      @include desktop {
+        width: 100%;
+        text-align: center;
+        padding-top: 1.5rem;
+        border-top: $border__solid;
+        padding-bottom: 1rem;
+      }
       li {
         margin-left: 2rem;
         line-height: 1.75;
+        color: $color__main-text;
         @include tablet {
           margin-left: 2.5rem;
+          @include font-size(1.125);
+        }
+        @include desktop {
+          margin: 0;
         }
       }
     }

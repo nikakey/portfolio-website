@@ -360,7 +360,8 @@ a {
         padding: 3rem 1.5rem; } }
     @media screen and (min-width: 1080px) {
       .my-skills .intro {
-        padding: 5rem 2rem; } }
+        padding: 5rem 2rem 7rem 2rem;
+        border-bottom: 0; } }
     .my-skills .intro h3 {
       text-align: center;
       margin-bottom: 1rem; }
@@ -386,6 +387,14 @@ a {
 .skills-wrapper {
   background: #a6d0e0;
   padding: 3rem 1.5rem; }
+  @media screen and (min-width: 1080px) {
+    .skills-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      padding: 3rem 2rem 6rem 2rem; } }
   .skills-wrapper .skills {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -401,6 +410,15 @@ a {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center; } }
+    @media screen and (min-width: 1080px) {
+      .skills-wrapper .skills {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding-top: 0;
+        border-bottom: 0;
+        padding-bottom: 0; } }
     .skills-wrapper .skills:first-child {
       padding-top: 0; }
     .skills-wrapper .skills:last-child {
@@ -415,18 +433,39 @@ a {
       @media screen and (min-width: 600px) {
         .skills-wrapper .skills .scills-img {
           max-width: 150px;
-          width: unset; } }
+          width: unset;
+          padding: 0; } }
+      @media screen and (min-width: 1080px) {
+        .skills-wrapper .skills .scills-img {
+          max-width: 250px;
+          padding: 2rem;
+          border-radius: 50%;
+          background: #a6d0e0;
+          margin-top: -50%; } }
     .skills-wrapper .skills .skills-content {
       width: 70%; }
       @media screen and (min-width: 600px) {
         .skills-wrapper .skills .skills-content {
           width: 30%; } }
+      @media screen and (min-width: 1080px) {
+        .skills-wrapper .skills .skills-content {
+          width: 100%;
+          text-align: center;
+          padding-top: 1.5rem;
+          border-top: 1px solid #faf6e6;
+          padding-bottom: 1rem; } }
       .skills-wrapper .skills .skills-content li {
         margin-left: 2rem;
-        line-height: 1.75; }
+        line-height: 1.75;
+        color: #032a47; }
         @media screen and (min-width: 600px) {
           .skills-wrapper .skills .skills-content li {
-            margin-left: 2.5rem; } }
+            margin-left: 2.5rem;
+            font-size: 18px;
+            font-size: 1.125rem; } }
+        @media screen and (min-width: 1080px) {
+          .skills-wrapper .skills .skills-content li {
+            margin: 0; } }
 
 .site-footer {
   background: -webkit-gradient(linear, left top, left bottom, from(#62a9c7), to(rgba(98, 169, 199, 0.6))), url("../../images/footer-background.jpg") top center no-repeat;
