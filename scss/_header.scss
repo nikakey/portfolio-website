@@ -21,6 +21,12 @@
         li {
           display: inline;
           margin: 0 .75rem 0 .75rem;
+          &:first-child {
+            margin-left: 0;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
           a {
             color: $color__main-basic;
             padding: .15rem .25rem;

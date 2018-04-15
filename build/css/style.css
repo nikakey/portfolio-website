@@ -135,7 +135,8 @@ textarea {
 
 /* HEADINGS */
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  color: #032a47; }
 
 h1 {
   font-family: "Chelsea Market", sans-serif;
@@ -156,8 +157,18 @@ h2 {
       font-size: 3.75rem; } }
 
 h3 {
-  font-size: 32px;
-  font-size: 2rem; }
+  font-size: 24px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px; }
+  @media screen and (min-width: 600px) {
+    h3 {
+      font-size: 35.008px;
+      font-size: 2.188rem; } }
+  @media screen and (min-width: 1080px) {
+    h3 {
+      font-size: 40px;
+      font-size: 2.5rem; } }
 
 p {
   color: #032a47; }
@@ -188,6 +199,10 @@ p {
         .site-header .site-nav ul li {
           display: inline;
           margin: 0 .75rem 0 .75rem; }
+          .site-header .site-nav ul li:first-child {
+            margin-left: 0; }
+          .site-header .site-nav ul li:last-child {
+            margin-right: 0; }
           .site-header .site-nav ul li a {
             color: white;
             padding: .15rem .25rem; }
@@ -332,6 +347,40 @@ a {
         margin: 0;
         padding: .5rem 0 .5rem 2rem; } }
 
+/* SKILLS AREA */
+.my-skills {
+  border-top: 1px solid #faf6e6; }
+  .my-skills .intro {
+    background: #e5e4f0;
+    padding: 3rem 1.5rem; }
+    @media screen and (min-width: 600px) {
+      .my-skills .intro {
+        padding: 4rem 1.5rem; } }
+    @media screen and (min-width: 1080px) {
+      .my-skills .intro {
+        padding: 5rem 2rem; } }
+    .my-skills .intro h3 {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-weight: 600; }
+    .my-skills .intro p {
+      font-size: 18px;
+      font-size: 1.125rem;
+      text-align: center;
+      padding: 0 .5rem; }
+      .my-skills .intro p span {
+        font-weight: 600; }
+      @media screen and (min-width: 600px) {
+        .my-skills .intro p {
+          font-size: 24px;
+          font-size: 1.5rem; } }
+      @media screen and (min-width: 1080px) {
+        .my-skills .intro p {
+          font-size: 28px;
+          font-size: 1.75rem;
+          max-width: 900px;
+          margin: 0 auto; } }
+
 .site-footer {
   background: -webkit-gradient(linear, left top, left bottom, from(#62a9c7), to(rgba(98, 169, 199, 0.6))), url("../../images/footer-background.jpg") top center no-repeat;
   background: linear-gradient(#62a9c7, rgba(98, 169, 199, 0.6)), url("../../images/footer-background.jpg") top center no-repeat;
@@ -342,6 +391,9 @@ a {
   @media screen and (min-width: 600px) {
     .site-footer {
       background-position: center; } }
+  @media screen and (min-width: 1080px) {
+    .site-footer {
+      padding: 2rem; } }
   .site-footer .contacts {
     text-align: center;
     display: -webkit-box;

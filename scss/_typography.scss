@@ -14,6 +14,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	color: $color__main-text;
 }
 
 h1 {
@@ -33,7 +34,15 @@ h2 {
 }
 
 h3 {
-	@include font-size(2);
+	@include font-size(1.5);
+	text-transform: uppercase;
+	letter-spacing: $text__letter-spacing;
+	@include tablet {
+		@include font-size(2.188);
+	}
+	@include desktop {
+		@include font-size(2.5);
+	}
 }
 
 p {

@@ -7,6 +7,9 @@
   @include tablet {
     background-position: center;
   }
+  @include desktop {
+    padding: 2rem;
+  }
   .contacts {
     text-align: center;
     display: flex;
