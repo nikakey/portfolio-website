@@ -467,6 +467,39 @@ a {
           .skills-wrapper .skills .skills-content li {
             margin: 0; } }
 
+/**** ABOUT ME AREA ****/
+.about-me {
+  padding: 2rem 1.5rem; }
+  @media screen and (min-width: 1080px) {
+    .about-me {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 0; } }
+  .about-me .my-img {
+    width: 100%;
+    height: auto;
+    display: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(98, 169, 199, 0.4)), to(rgba(166, 208, 224, 0.3))), url("../../images/about-bg.jpg") center no-repeat;
+    background: linear-gradient(rgba(98, 169, 199, 0.4), rgba(166, 208, 224, 0.3)), url("../../images/about-bg.jpg") center no-repeat;
+    background-size: cover, cover; }
+    @media screen and (min-width: 1080px) {
+      .about-me .my-img {
+        display: block;
+        width: 50%; } }
+  .about-me .about-desription h2 {
+    color: #fb286f;
+    text-transform: uppercase;
+    margin-bottom: 1rem; }
+  .about-me .about-desription p {
+    margin-bottom: 1rem; }
+    .about-me .about-desription p:last-child {
+      margin-bottom: 0; }
+  @media screen and (min-width: 1080px) {
+    .about-me .about-desription {
+      padding: 4rem;
+      width: 50%; } }
+
 .site-footer {
   background: -webkit-gradient(linear, left top, left bottom, from(#62a9c7), to(rgba(98, 169, 199, 0.6))), url("../../images/footer-background.jpg") top center no-repeat;
   background: linear-gradient(#62a9c7, rgba(98, 169, 199, 0.6)), url("../../images/footer-background.jpg") top center no-repeat;

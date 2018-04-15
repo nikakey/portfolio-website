@@ -160,3 +160,41 @@
     }
   }
 }
+
+/**** ABOUT ME AREA ****/
+
+.about-me {
+  padding: 2rem 1.5rem;
+  @include desktop {
+    display: flex;
+    padding: 0;
+  }
+  .my-img {
+    width: 100%;
+    height: auto;
+    display: none;
+    background: linear-gradient(rgba($color__brand-dark,.4),rgba($color__brand-dark-second,0.3)), url("../../images/about-bg.jpg") center no-repeat;
+    background-size: cover, cover;
+    @include desktop {
+      display: block;
+      width: 50%;
+    }
+  }
+  .about-desription {
+    h2 {
+      color: $color__brand-light-third;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    p {
+      margin-bottom: 1rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    @include desktop {
+      padding: 4rem;
+      width: 50%;
+    }
+  }
+}
