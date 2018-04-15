@@ -1,5 +1,5 @@
 
-/* BANNER AREA */
+/**** BANNER AREA ****/
 
 .site-banner {
   height: 300px;
@@ -42,15 +42,18 @@
   }
 }
 
-/* SKILLS AREA */
+/**** SKILLS AREA ****/
+
+/* Intro */
 
 .my-skills {
   border-top: $border__solid;
   .intro {
     background: $color__brand-light-second;
-    padding: 3rem 1.5rem;
+    padding: 2.5rem 1.5rem;
+    border-bottom: $border__solid;
     @include tablet {
-      padding: 4rem 1.5rem;
+      padding: 3rem 1.5rem;
     }
     @include desktop {
       padding: 5rem 2rem;
@@ -58,7 +61,6 @@
     h3 {
       text-align: center;
       margin-bottom: 1rem;
-      font-weight: 600;
     }
     p {
       @include font-size(1.125);
@@ -74,6 +76,54 @@
         @include font-size(1.75);
         max-width: 900px;
         @include center-block;
+      }
+    }
+  }
+}
+
+/* Skills */
+
+.skills-wrapper {
+  background: $color__brand-dark-second;
+  padding: 3rem 1.5rem;
+  .skills {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: $border__solid;
+    @include tablet {
+      justify-content: center;
+    }
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child{
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+    .scills-img {
+      max-width: 120px;
+      width: 30%;
+      padding: 1rem;
+      border-radius: 50%;
+      line-height: 1;
+      @include tablet {
+        max-width: 150px;
+        width: unset;
+      }
+    }
+    .skills-content {
+      width: 70%;
+      @include tablet {
+        width: 30%;
+      }
+      li {
+        margin-left: 2rem;
+        line-height: 1.75;
+        @include tablet {
+          margin-left: 2.5rem;
+        }
       }
     }
   }
