@@ -10,8 +10,11 @@
   text-transform: uppercase;
   letter-spacing: $text__letter-spacing;
   color: $color__main-basic;
+  @include tablet {
+    padding: 1.5rem 2rem;
+  }
   @include desktop {
-    padding: 2rem;
+    padding: 2rem 4rem;
   }
   .site-nav {
     display: none;

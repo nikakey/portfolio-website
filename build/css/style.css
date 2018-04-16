@@ -188,9 +188,12 @@ p {
   text-transform: uppercase;
   letter-spacing: 3px;
   color: white; }
+  @media screen and (min-width: 600px) {
+    .site-header {
+      padding: 1.5rem 2rem; } }
   @media screen and (min-width: 1080px) {
     .site-header {
-      padding: 2rem; } }
+      padding: 2rem 4rem; } }
   .site-header .site-nav {
     display: none; }
     @media screen and (min-width: 1080px) {
@@ -323,7 +326,7 @@ a {
     margin: 0 auto; }
     @media screen and (min-width: 1080px) {
       .site-banner h1 {
-        padding: 9rem 0 0 2rem;
+        padding: 9rem 0 0 4rem;
         width: 46%;
         max-width: unset;
         text-align: right;
@@ -345,7 +348,7 @@ a {
         max-width: unset;
         text-align: right;
         margin: 0;
-        padding: .5rem 0 .5rem 2rem; } }
+        padding: .5rem 0 .5rem 4rem; } }
 
 /**** SKILLS AREA ****/
 /* Intro */
@@ -357,10 +360,10 @@ a {
     border-bottom: 1px solid #faf6e6; }
     @media screen and (min-width: 600px) {
       .my-skills .intro {
-        padding: 3rem 1.5rem; } }
+        padding: 3rem 2rem; } }
     @media screen and (min-width: 1080px) {
       .my-skills .intro {
-        padding: 5rem 2rem 7rem 2rem;
+        padding: 5rem 4rem 7rem 4rem;
         border-bottom: 0; } }
     .my-skills .intro h3 {
       text-align: center;
@@ -387,6 +390,9 @@ a {
 .skills-wrapper {
   background: #a6d0e0;
   padding: 3rem 1.5rem; }
+  @media screen and (min-width: 600px) {
+    .skills-wrapper {
+      padding: 3rem 2rem; } }
   @media screen and (min-width: 1080px) {
     .skills-wrapper {
       display: -webkit-box;
@@ -394,7 +400,7 @@ a {
       display: flex;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-      padding: 3rem 2rem 6rem 2rem; } }
+      padding: 3rem 4rem 6rem 4rem; } }
   .skills-wrapper .skills {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -469,7 +475,10 @@ a {
 
 /**** ABOUT ME AREA ****/
 .about-me {
-  padding: 2rem 1.5rem; }
+  padding: 2rem 1.5rem 3rem 1.5rem; }
+  @media screen and (min-width: 600px) {
+    .about-me {
+      padding: 3rem 2rem 5rem 2rem; } }
   @media screen and (min-width: 1080px) {
     .about-me {
       display: -webkit-box;
@@ -502,8 +511,14 @@ a {
 
 /**** PROJECTS AREA ****/
 .my-works {
-  padding: 2rem 1.5rem;
+  padding: 2rem 1.5rem 5rem 1.5rem;
   background: #e5e4f0; }
+  @media screen and (min-width: 600px) {
+    .my-works {
+      padding: 3rem 2rem 5rem 2rem; } }
+  @media screen and (min-width: 1080px) {
+    .my-works {
+      padding: 6rem 4rem; } }
   .my-works h3 {
     text-align: center;
     margin-bottom: 1rem;
@@ -511,6 +526,12 @@ a {
     padding-bottom: .5rem;
     border-top: 1px solid white;
     border-bottom: 1px solid white; }
+    @media screen and (min-width: 600px) {
+      .my-works h3 {
+        margin-bottom: 2rem; } }
+    @media screen and (min-width: 1080px) {
+      .my-works h3 {
+        margin-bottom: 3rem; } }
   .my-works .projects-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -519,6 +540,21 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
+    @media screen and (min-width: 600px) {
+      .my-works .projects-wrapper {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; } }
+    @media screen and (min-width: 1080px) {
+      .my-works .projects-wrapper {
+        -ms-flex-pack: distribute;
+            justify-content: space-around; } }
     .my-works .projects-wrapper .project-wrapper {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -529,12 +565,18 @@ a {
               flex-direction: column;
       margin-bottom: 2rem;
       height: 300px; }
+      @media screen and (min-width: 600px) {
+        .my-works .projects-wrapper .project-wrapper {
+          width: 48%;
+          margin-top: 1rem;
+          margin-bottom: 1rem; } }
+      @media screen and (min-width: 1080px) {
+        .my-works .projects-wrapper .project-wrapper {
+          width: 31%; } }
       .my-works .projects-wrapper .project-wrapper:first-child {
         margin-top: 1rem; }
       .my-works .projects-wrapper .project-wrapper:last-child {
         margin-bottom: 0; }
-      .my-works .projects-wrapper .project-wrapper h4 {
-        color: white; }
       .my-works .projects-wrapper .project-wrapper .project-title {
         height: 50%;
         border: 1px solid white;
@@ -551,12 +593,45 @@ a {
         font-weight: 600;
         font-size: 32px;
         font-size: 2rem; }
+        .my-works .projects-wrapper .project-wrapper .project-title h4 {
+          color: white;
+          text-shadow: 1px 1px 1px rgba(44, 43, 43, 0.431); }
       .my-works .projects-wrapper .project-wrapper .project-description {
         height: 50%;
         background: white; }
         .my-works .projects-wrapper .project-wrapper .project-description p {
           padding: 1rem;
           font-style: italic; }
+
+#starfish {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.267)), to(rgba(250, 246, 230, 0.3))), url("../../images/projects/starfish-bg.png") center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.267), rgba(250, 246, 230, 0.3)), url("../../images/projects/starfish-bg.png") center no-repeat;
+  background-size: cover, cover; }
+
+#quotes {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.267)), to(rgba(0, 0, 0, 0.267))), url("../../images/projects/quotes-bg.png") center top no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.267), rgba(0, 0, 0, 0.267)), url("../../images/projects/quotes-bg.png") center top no-repeat;
+  background-size: cover, cover; }
+
+#inhabitent {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.267)), to(rgba(0, 0, 0, 0.267))), url("../../images/projects/inhabitent-bg.jpg") center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.267), rgba(0, 0, 0, 0.267)), url("../../images/projects/inhabitent-bg.jpg") center no-repeat;
+  background-size: cover, cover; }
+
+#pong {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.267)), to(rgba(0, 0, 0, 0.267))), url("../../images/projects/pong-bg.png") center top no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.267), rgba(0, 0, 0, 0.267)), url("../../images/projects/pong-bg.png") center top no-repeat;
+  background-size: cover, cover; }
+
+#instanews {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.267)), to(rgba(0, 0, 0, 0.267))), url("../../images/projects/instanews-bg.png") center top no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.267), rgba(0, 0, 0, 0.267)), url("../../images/projects/instanews-bg.png") center top no-repeat;
+  background-size: cover, cover; }
+
+#aloha {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.267)), to(rgba(0, 0, 0, 0.267))), url("../../images/projects/aloha-bg.jpg") center top no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.267), rgba(0, 0, 0, 0.267)), url("../../images/projects/aloha-bg.jpg") center top no-repeat;
+  background-size: cover, cover; }
 
 .site-footer {
   background: -webkit-gradient(linear, left top, left bottom, from(#62a9c7), to(rgba(98, 169, 199, 0.6))), url("../../images/footer-background.jpg") top center no-repeat;
@@ -567,10 +642,11 @@ a {
   position: relative; }
   @media screen and (min-width: 600px) {
     .site-footer {
-      background-position: center; } }
+      background-position: center;
+      padding: 1.5rem 2rem; } }
   @media screen and (min-width: 1080px) {
     .site-footer {
-      padding: 2rem; } }
+      padding: 2rem 4rem; } }
   .site-footer .contacts {
     text-align: center;
     display: -webkit-box;

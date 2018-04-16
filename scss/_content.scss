@@ -16,7 +16,7 @@
     max-width: 400px;
     @include center-block;
     @include desktop {
-      padding: 9rem 0 0 2rem;
+      padding: 9rem 0 0 4rem;
       width: 46%;
       max-width: unset;
       text-align: right;
@@ -37,7 +37,7 @@
       max-width: unset;
       text-align: right;
       margin: 0;
-      padding: .5rem 0 .5rem 2rem;
+      padding: .5rem 0 .5rem 4rem;
     }
   }
 }
@@ -53,10 +53,10 @@
     padding: 2.5rem 1.5rem;
     border-bottom: $border__solid;
     @include tablet {
-      padding: 3rem 1.5rem;
+      padding: 3rem 2rem;
     }
     @include desktop {
-      padding: 5rem 2rem 7rem 2rem;
+      padding: 5rem 4rem 7rem 4rem;
       border-bottom: 0;
     }
     h3 {
@@ -87,10 +87,13 @@
 .skills-wrapper {
   background: $color__brand-dark-second;
   padding: 3rem 1.5rem;
+  @include tablet {
+    padding: 3rem 2rem;
+  }
   @include desktop {
     display: flex;
     justify-content: space-around;
-    padding: 3rem 2rem 6rem 2rem;
+    padding: 3rem 4rem 6rem 4rem;
   }
   .skills {
     display: flex;
@@ -164,7 +167,10 @@
 /**** ABOUT ME AREA ****/
 
 .about-me {
-  padding: 2rem 1.5rem;
+  padding: 2rem 1.5rem 3rem 1.5rem;
+  @include tablet {
+    padding: 3rem 2rem 5rem 2rem;
+  }
   @include desktop {
     display: flex;
     padding: 0;
@@ -202,8 +208,14 @@
 /**** PROJECTS AREA ****/
 
 .my-works {
-  padding: 2rem 1.5rem;
+  padding: 2rem 1.5rem 5rem 1.5rem;
   background: $color__brand-light-second;
+  @include tablet {
+    padding: 3rem 2rem 5rem 2rem;
+  }
+  @include desktop {
+    padding: 6rem 4rem;
+  }
   h3 {
     text-align: center;
     margin-bottom: 1rem;
@@ -211,23 +223,42 @@
     padding-bottom: .5rem;
     border-top: $border__solid-basic;
     border-bottom: $border__solid-basic;
+    @include tablet {
+      margin-bottom: 2rem;
+    }
+    @include desktop {
+      margin-bottom: 3rem;
+    }
   }
   .projects-wrapper {
     display: flex;
     flex-direction: column;
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    @include desktop {
+      justify-content: space-around;
+    }
     .project-wrapper {
       display: flex;
       flex-direction: column;
       margin-bottom: 2rem;
       height: 300px;
+      @include tablet {
+        width: 48%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+      @include desktop {
+        width: 31%;
+      }
       &:first-child {
         margin-top: 1rem;
       }
       &:last-child {
         margin-bottom: 0;
-      }
-      h4 {
-        color: $color__main-basic;
       }
       .project-title {
         height: 50%;
@@ -238,6 +269,10 @@
         justify-content: center;
         font-weight: 600;
         @include font-size(2);
+        h4 {
+          color: $color__main-basic;
+          text-shadow: 1px 1px 1px hsla(0, 1%, 17%, 0.431);
+        }
       }
       .project-description {
         height: 50%;
@@ -249,4 +284,29 @@
       }
     }
   }
+}
+
+#starfish {
+  background: linear-gradient(rgba(0,0,0,.267),rgba($color__brand-light,0.3)), url("../../images/projects/starfish-bg.png") center no-repeat;
+  background-size: cover, cover;
+}
+#quotes {
+  background: linear-gradient(rgba(0,0,0,.267),rgba(0,0,0,.267)), url("../../images/projects/quotes-bg.png") center top no-repeat;
+  background-size: cover, cover;
+}
+#inhabitent {
+  background: linear-gradient(rgba(0,0,0,.267),rgba(0,0,0,.267)), url("../../images/projects/inhabitent-bg.jpg") center no-repeat;
+  background-size: cover, cover;
+}
+#pong {
+  background: linear-gradient(rgba(0,0,0,.267),rgba(0,0,0,.267)), url("../../images/projects/pong-bg.png") center top no-repeat;
+  background-size: cover, cover;
+}
+#instanews {
+  background: linear-gradient(rgba(0,0,0,.267),rgba(0,0,0,.267)), url("../../images/projects/instanews-bg.png") center top no-repeat;
+  background-size: cover, cover;
+}
+#aloha {
+  background: linear-gradient(rgba(0,0,0,.267),rgba(0,0,0,.267)), url("../../images/projects/aloha-bg.jpg") center top no-repeat;
+  background-size: cover, cover;
 }

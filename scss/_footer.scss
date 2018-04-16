@@ -6,9 +6,10 @@
   position: relative;
   @include tablet {
     background-position: center;
+    padding: 1.5rem 2rem;
   }
   @include desktop {
-    padding: 2rem;
+    padding: 2rem 4rem;
   }
   .contacts {
     text-align: center;
