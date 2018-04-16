@@ -489,8 +489,7 @@ a {
     width: 100%;
     height: auto;
     display: none;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(98, 169, 199, 0.4)), to(rgba(166, 208, 224, 0.3))), url("../../images/about-bg.jpg") center no-repeat;
-    background: linear-gradient(rgba(98, 169, 199, 0.4), rgba(166, 208, 224, 0.3)), url("../../images/about-bg.jpg") center no-repeat;
+    background: url("../../images/about-bg.jpg") center no-repeat;
     background-size: cover, cover; }
     @media screen and (min-width: 1080px) {
       .about-me .my-img {

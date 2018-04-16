@@ -179,7 +179,7 @@
     width: 100%;
     height: auto;
     display: none;
-    background: linear-gradient(rgba($color__brand-dark,.4),rgba($color__brand-dark-second,0.3)), url("../../images/about-bg.jpg") center no-repeat;
+    background: url("../../images/about-bg.jpg") center no-repeat;
     background-size: cover, cover;
     @include desktop {
       display: block;
