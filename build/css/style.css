@@ -177,6 +177,12 @@ p {
   display: none; }
 
 .site-header {
+  position: fixed;
+  top: 0;
+  -webkit-transition: top 0.2s ease-in-out;
+  transition: top 0.2s ease-in-out;
+  z-index: 9999;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -206,19 +212,26 @@ p {
             margin-left: 0; }
           .site-header .site-nav ul li:last-child {
             margin-right: 0; }
-          .site-header .site-nav ul li a {
+          .site-header .site-nav ul li a,
+          .site-header .site-nav ul li a:visited {
             color: white;
             padding: .15rem .25rem; }
-            .site-header .site-nav ul li a:hover {
+            .site-header .site-nav ul li a:hover, .site-header .site-nav ul li a:focus,
+            .site-header .site-nav ul li a:visited:hover,
+            .site-header .site-nav ul li a:visited:focus {
               background: white;
               color: #62a9c7;
               border-radius: 5px; } }
   .site-header .socials ul li {
     display: inline;
     margin: 0 .5rem 0 .5rem; }
-    .site-header .socials ul li a {
+    .site-header .socials ul li a,
+    .site-header .socials ul li a:focus,
+    .site-header .socials ul li a:visited {
       color: white; }
-      .site-header .socials ul li a:hover {
+      .site-header .socials ul li a:hover,
+      .site-header .socials ul li a:focus:hover,
+      .site-header .socials ul li a:visited:hover {
         color: #032a47; }
 
 /* LINKS */
@@ -301,7 +314,7 @@ a {
 
 /**** BANNER AREA ****/
 .site-banner {
-  height: 300px;
+  height: 400px;
   background: -webkit-gradient(linear, left top, left bottom, from(#62a9c7), to(rgba(98, 169, 199, 0.6))), url("../../images/site-banner.jpg") bottom center no-repeat;
   background: linear-gradient(#62a9c7, rgba(98, 169, 199, 0.6)), url("../../images/site-banner.jpg") bottom center no-repeat;
   background-size: cover, cover; }
@@ -309,7 +322,7 @@ a {
     .site-banner {
       height: 100vh; } }
   .site-banner h1 {
-    padding: 1.5rem 1.5rem 0 1.5rem;
+    padding: 6rem 1.5rem 0 1.5rem;
     text-align: center;
     color: white;
     width: 94%;

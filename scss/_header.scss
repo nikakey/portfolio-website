@@ -3,6 +3,11 @@
   display: none;
 }
 .site-header {
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  z-index: 9999;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 1.5rem;
@@ -30,10 +35,12 @@
           &:last-child {
             margin-right: 0;
           }
-          a {
+          a,
+          a:visited {
             color: $color__main-basic;
             padding: .15rem .25rem;
-            &:hover {
+            &:hover,
+            &:focus {
               background: $color__main-basic;
               color: $color__brand-dark;
               border-radius: 5px;
@@ -48,7 +55,9 @@
       li {
         display: inline;
         margin: 0 .5rem 0 .5rem;
-        a {
+        a,
+        a:focus,
+        a:visited {
           color: $color__main-basic;
           &:hover {
             color: $color__main-text;
