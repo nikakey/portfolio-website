@@ -232,17 +232,20 @@ a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  text-decoration: none;
   cursor: pointer; }
   .slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar {
     margin-top: .188rem; }
 
 .slicknav_menu {
+  background: #62a9c7;
   *zoom: 1; }
   @media screen and (min-width: 1080px) {
     .slicknav_menu {
       display: none; } }
   .slicknav_menu .slicknav_menutxt {
-    display: block; }
+    display: block;
+    color: white; }
   .slicknav_menu .slicknav_icon {
     width: 1.125rem;
     height: .875rem;
@@ -260,29 +263,11 @@ a {
     display: block;
     width: 1.125rem;
     height: .125rem;
-    border-radius: 1px; }
-
-.slicknav_nav {
-  clear: both; }
-  .slicknav_nav ul {
-    display: block; }
-  .slicknav_nav li {
-    display: block; }
-  .slicknav_nav a {
-    display: block; }
-
-.slicknav_menu {
-  background: #62a9c7;
-  width: 50%; }
-  .slicknav_menu .slicknav_menutxt {
-    color: white; }
-  .slicknav_menu .slicknav_icon-bar {
+    border-radius: 1px;
     background-color: white; }
 
-.slicknav_btn {
-  text-decoration: none; }
-
 .slicknav_nav {
+  clear: both;
   color: white;
   margin: 0;
   padding: 0;
@@ -290,23 +275,29 @@ a {
   list-style: none;
   overflow: hidden; }
   .slicknav_nav ul {
+    display: block;
+    position: absolute;
+    width: 100%;
+    max-width: 200px;
+    background: #62a9c7;
     list-style: none;
-    overflow: hidden;
     padding: 0; }
-    .slicknav_nav ul li {
-      border-top: 1px solid #faf6e6;
-      margin: 0 3px; }
-      .slicknav_nav ul li:first-child {
-        border-top: 0; }
-    .slicknav_nav ul a {
-      text-align: center;
-      text-decoration: none;
-      color: white;
-      padding-top: .5rem;
-      padding-bottom: .5rem; }
-      .slicknav_nav ul a:hover {
-        background: #e5e4f0;
-        color: #032a47; }
+  .slicknav_nav li {
+    display: block;
+    border-top: 1px solid #faf6e6;
+    margin: 0 3px; }
+    .slicknav_nav li:first-child {
+      border-top: 0; }
+  .slicknav_nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding-top: .5rem;
+    padding-bottom: .5rem; }
+    .slicknav_nav a:hover {
+      background: #e5e4f0;
+      color: #032a47; }
 
 /**** BANNER AREA ****/
 .site-banner {
