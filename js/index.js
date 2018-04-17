@@ -25,9 +25,15 @@ $(document).ready(function(){
 
       if (target.length) {
         event.preventDefault();
-        $('html, body').animate({scrollTop: targetOffset - headerHeight}, 1000, function() {
-        });
+        $('html, body').animate({scrollTop: targetOffset - headerHeight}, 1000);
       }
     }
   });
+
+  /* Transparent header on the top */
+
+  $(window).scroll(function(){
+    $(window).scrollTop() >= 30 ? $('.site-header').css('background', 'rgb(98, 169, 199)') : $('.site-header').css('background', 'transparent');
+  });
+
 });

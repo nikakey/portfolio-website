@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   padding: 1.5rem;
-  background: $color__brand-dark;
+  background: transparent;
   text-transform: uppercase;
   letter-spacing: $text__letter-spacing;
   color: $color__main-basic;
@@ -36,11 +36,11 @@
             margin-right: 0;
           }
           a,
-          a:visited {
+          a:visited,
+          a:focus {
             color: $color__main-basic;
             padding: .15rem .25rem;
-            &:hover,
-            &:focus {
+            &:hover {
               background: $color__main-basic;
               color: $color__brand-dark;
               border-radius: 5px;

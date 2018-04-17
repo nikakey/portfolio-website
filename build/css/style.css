@@ -190,7 +190,7 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1.5rem;
-  background: #62a9c7;
+  background: transparent;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: white; }
@@ -213,12 +213,13 @@ p {
           .site-header .site-nav ul li:last-child {
             margin-right: 0; }
           .site-header .site-nav ul li a,
-          .site-header .site-nav ul li a:visited {
+          .site-header .site-nav ul li a:visited,
+          .site-header .site-nav ul li a:focus {
             color: white;
             padding: .15rem .25rem; }
-            .site-header .site-nav ul li a:hover, .site-header .site-nav ul li a:focus,
+            .site-header .site-nav ul li a:hover,
             .site-header .site-nav ul li a:visited:hover,
-            .site-header .site-nav ul li a:visited:focus {
+            .site-header .site-nav ul li a:focus:hover {
               background: white;
               color: #62a9c7;
               border-radius: 5px; } }
