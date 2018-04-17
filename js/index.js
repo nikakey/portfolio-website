@@ -5,6 +5,11 @@ $(document).ready(function(){
   $('#menu').slicknav({
     label: 'Menu',
     prependTo: 'header',
+    duration: 400,
+    closeOnClick: true,
+    anomations: 'jquery',
+    easingClose: 'linear',
+    easingOpen: 'linear'
   });
 
   /* Smooth Scrolling */

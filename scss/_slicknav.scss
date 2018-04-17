@@ -9,6 +9,10 @@
 }
 .slicknav_menu {
 	background: $color__brand-dark;
+	position: absolute;
+	max-width: 200px;
+	width: 100%;
+	top: 22%;
   @include desktop {
     display: none;
   }
@@ -53,9 +57,7 @@
 	overflow: hidden;
 	ul {
 		display: block;
-		position: absolute;
 		width: 100%;
-		max-width: 200px;
 		background: $color__brand-dark;
 		list-style: none;
 		padding: 0;

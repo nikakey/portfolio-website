@@ -221,19 +221,29 @@ p {
           background: white;
           color: #62a9c7;
           border-radius: 5px; } }
-  .site-header .socials ul li {
-    display: inline;
-    margin: 0 .5rem 0 .5rem; }
-    .site-header .socials ul li a,
-    .site-header .socials ul li a:focus,
-    .site-header .socials ul li a:visited {
-      color: white;
-      -webkit-transition: all .2s ease-in-out;
-      transition: all .2s ease-in-out; }
-      .site-header .socials ul li a:hover,
-      .site-header .socials ul li a:focus:hover,
-      .site-header .socials ul li a:visited:hover {
-        color: #032a47; }
+  .site-header .socials {
+    position: absolute;
+    right: 1.5rem;
+    top: 22%; }
+    @media screen and (min-width: 600px) {
+      .site-header .socials {
+        right: 2rem; } }
+    @media screen and (min-width: 1080px) {
+      .site-header .socials {
+        position: inherit; } }
+    .site-header .socials ul li {
+      display: inline;
+      margin: 0 .5rem 0 .5rem; }
+      .site-header .socials ul li a,
+      .site-header .socials ul li a:focus,
+      .site-header .socials ul li a:visited {
+        color: white;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out; }
+        .site-header .socials ul li a:hover,
+        .site-header .socials ul li a:focus:hover,
+        .site-header .socials ul li a:visited:hover {
+          color: #032a47; }
 
 /* LINKS */
 a {
@@ -253,6 +263,10 @@ a {
 
 .slicknav_menu {
   background: #62a9c7;
+  position: absolute;
+  max-width: 200px;
+  width: 100%;
+  top: 22%;
   *zoom: 1; }
   @media screen and (min-width: 1080px) {
     .slicknav_menu {
@@ -290,9 +304,7 @@ a {
   overflow: hidden; }
   .slicknav_nav ul {
     display: block;
-    position: absolute;
     width: 100%;
-    max-width: 200px;
     background: #62a9c7;
     list-style: none;
     padding: 0; }

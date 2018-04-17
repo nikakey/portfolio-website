@@ -54,6 +54,15 @@
     }
   }
   .socials {
+    position: absolute;
+    right: 1.5rem;
+    top: 22%;
+    @include tablet {
+      right: 2rem;
+    }
+    @include desktop {
+      position: inherit;
+    }
     ul {
       li {
         display: inline;
