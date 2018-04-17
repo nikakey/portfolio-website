@@ -37,7 +37,7 @@ $(document).ready(function(){
     $(window).scrollTop() >= 30 ? $('.site-header').css('background', 'rgb(98, 169, 199)') : $('.site-header').css('background', 'transparent');
   });
 
-  /* Fancy active links in header */
+  /* Active links in header */
 
   $(window).on('scroll', function() {
     $('section').each(function() {
