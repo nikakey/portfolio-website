@@ -16,7 +16,6 @@ $(document).ready(function(){
       location.hostname == this.hostname
     ) {
       var target = $(this.hash);
-      // target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 
       var targetOffset = target.offset() ? target.offset().top : 0;
 
@@ -26,17 +25,7 @@ $(document).ready(function(){
 
       if (target.length) {
         event.preventDefault();
-        $('html, body').animate({
-          scrollTop: targetOffset - headerHeight
-        }, 1000, function() {
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) {
-            return false;
-          } else {
-            $target.attr('tabindex','-1');
-            $target.focus();
-          };
+        $('html, body').animate({scrollTop: targetOffset - headerHeight}, 1000, function() {
         });
       }
     }
