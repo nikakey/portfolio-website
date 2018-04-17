@@ -35,16 +35,20 @@
           &:last-child {
             margin-right: 0;
           }
-          a,
-          a:visited,
-          a:focus {
+          a {
             color: $color__main-basic;
             padding: .15rem .25rem;
+            transition: all .3s ease-in-out;
             &:hover {
-              background: $color__main-basic;
-              color: $color__brand-dark;
-              border-radius: 5px;
+              color: $color__main-text;
             }
+          }
+        }
+        .active {
+          a {
+            background: $color__main-basic;
+            color: $color__brand-dark;
+            border-radius: 5px;
           }
         }
       }
@@ -59,6 +63,7 @@
         a:focus,
         a:visited {
           color: $color__main-basic;
+          transition: all .3s ease-in-out;
           &:hover {
             color: $color__main-text;
           }

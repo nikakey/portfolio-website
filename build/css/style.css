@@ -212,24 +212,26 @@ p {
             margin-left: 0; }
           .site-header .site-nav ul li:last-child {
             margin-right: 0; }
-          .site-header .site-nav ul li a,
-          .site-header .site-nav ul li a:visited,
-          .site-header .site-nav ul li a:focus {
+          .site-header .site-nav ul li a {
             color: white;
-            padding: .15rem .25rem; }
-            .site-header .site-nav ul li a:hover,
-            .site-header .site-nav ul li a:visited:hover,
-            .site-header .site-nav ul li a:focus:hover {
-              background: white;
-              color: #62a9c7;
-              border-radius: 5px; } }
+            padding: .15rem .25rem;
+            -webkit-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out; }
+            .site-header .site-nav ul li a:hover {
+              color: #032a47; }
+        .site-header .site-nav ul .active a {
+          background: white;
+          color: #62a9c7;
+          border-radius: 5px; } }
   .site-header .socials ul li {
     display: inline;
     margin: 0 .5rem 0 .5rem; }
     .site-header .socials ul li a,
     .site-header .socials ul li a:focus,
     .site-header .socials ul li a:visited {
-      color: white; }
+      color: white;
+      -webkit-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out; }
       .site-header .socials ul li a:hover,
       .site-header .socials ul li a:focus:hover,
       .site-header .socials ul li a:visited:hover {
@@ -696,7 +698,9 @@ a {
       .site-footer .contacts .contact-links a {
         margin-top: .75rem;
         margin-bottom: .75rem;
-        color: white; }
+        color: white;
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out; }
         @media screen and (min-width: 600px) {
           .site-footer .contacts .contact-links a {
             margin-top: 2rem;
@@ -712,7 +716,9 @@ a {
             font-size: 1.25rem; } }
         .site-footer .contacts .contact-links a span {
           color: #032a47;
-          margin-left: 1rem; }
+          margin-left: 1rem;
+          -webkit-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out; }
         .site-footer .contacts .contact-links a:hover {
           color: #032a47; }
           .site-footer .contacts .contact-links a:hover span {
