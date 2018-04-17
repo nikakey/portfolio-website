@@ -5,7 +5,6 @@
 .site-header {
   position: fixed;
   top: 0;
-  transition: top 0.2s ease-in-out;
   z-index: 9999;
   width: 100%;
   display: flex;
@@ -38,7 +37,7 @@
           a {
             color: $color__main-basic;
             padding: .15rem .25rem;
-            transition: all .3s ease-in-out;
+            transition: all .2s ease-in-out;
             &:hover {
               color: $color__main-text;
             }
@@ -63,7 +62,7 @@
         a:focus,
         a:visited {
           color: $color__main-basic;
-          transition: all .3s ease-in-out;
+          transition: all .2s ease-in-out;
           &:hover {
             color: $color__main-text;
           }
