@@ -61,7 +61,7 @@
       right: 2rem;
     }
     @include desktop {
-      position: inherit;
+      position: initial;
     }
     ul {
       li {
