@@ -275,11 +275,28 @@
         }
       }
       .project-description {
-        height: 50%;
+        height: 60%;
         background: $color__main-basic;
+        position: relative;
         p {
           padding: 1rem;
           font-style: italic;
+        }
+        .works-btn {
+          position: absolute;
+          right: 1rem;
+          bottom: 1rem;
+          @include font-size(1);
+          padding: .25rem .5rem;
+          background: $color__brand-dark-second;
+          color: $color__main-text;
+          text-transform: uppercase;
+          font-weight: 300;
+          transition: all .2s ease-in-out;
+          &:hover {
+            background: darken($color__brand-dark-second, 18);
+            color: $color__main-basic;
+          }
         }
       }
     }
@@ -288,25 +305,49 @@
 
 #starfish {
   background: linear-gradient(rgba(0,0,0,.267),rgba($color__brand-light,0.3)), url("../../images/projects/starfish-bg.png") center no-repeat;
-  background-size: cover, cover;
+  background-size: cover, 100%;
+  transition: background-size .3s ease-in-out;
+  &:hover {
+    background-size: cover, 120%;
+  }
 }
 #quotes {
-  background: linear-gradient(rgba(0,0,0,.267),rgba(0,0,0,.267)), url("../../images/projects/quotes-bg.png") center top no-repeat;
-  background-size: cover, cover;
+  background: linear-gradient(rgba(0,0,0,.267),rgba(0,0,0,.267)), url("../../images/projects/quotes-bg.png") center no-repeat;
+  background-size: cover, 120%;
+  transition: background-size .3s ease-in-out;
+  &:hover {
+    background-size: cover, 140%;
+  }
 }
 #inhabitent {
   background: linear-gradient(rgba(0,0,0,.267),rgba(0,0,0,.267)), url("../../images/projects/inhabitent-bg.jpg") center no-repeat;
-  background-size: cover, cover;
+  background-size: cover, 100%;
+  transition: background-size .3s ease-in-out;
+  &:hover {
+    background-size: cover, 120%;
+  }
 }
 #pong {
   background: linear-gradient(rgba(0,0,0,.267),rgba(0,0,0,.267)), url("../../images/projects/pong-bg.png") center top no-repeat;
-  background-size: cover, cover;
+  background-size: cover, 110%;
+  transition: background-size .3s ease-in-out;
+  &:hover {
+    background-size: cover, 130%;
+  }
 }
 #instanews {
   background: linear-gradient(rgba(0,0,0,.267),rgba(0,0,0,.267)), url("../../images/projects/instanews-bg.png") center top no-repeat;
-  background-size: cover, cover;
+  background-size: cover, 100%;
+  transition: background-size .3s ease-in-out;
+  &:hover {
+    background-size: cover, 120%;
+  }
 }
 #aloha {
   background: linear-gradient(rgba(0,0,0,.267),rgba(0,0,0,.267)), url("../../images/projects/aloha-bg.jpg") center top no-repeat;
-  background-size: cover, cover;
+  background-size: cover, 100%;
+  transition: background-size .3s ease-in-out;
+  &:hover {
+    background-size: cover, 120%;
+  }
 }
