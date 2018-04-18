@@ -124,6 +124,11 @@ img {
   width: 100%;
   /* Adhere to container width. */ }
 
+hr {
+  display: block;
+  margin: .25rem 1.5rem;
+  border: 1px solid #faf6e6; }
+
 /* TYPOGRAPHY */
 body,
 button,
@@ -131,7 +136,9 @@ input,
 select,
 textarea {
   font-family: "Open Sans", sans-serif;
-  line-height: 1.5; }
+  line-height: 1.5;
+  font-size: 16px;
+  font-size: 1rem; }
 
 /* HEADINGS */
 h1, h2, h3, h4, h5, h6 {
@@ -608,6 +615,7 @@ a {
             -ms-flex-pack: center;
                 justify-content: center;
         font-weight: 600;
+        cursor: pointer;
         font-size: 32px;
         font-size: 2rem; }
         .my-works .projects-wrapper .project-wrapper .project-title h4 {
@@ -696,17 +704,129 @@ a {
   width: 100%;
   height: 100%;
   background: grey;
-  opacity: .8;
+  opacity: 1;
   display: none;
   z-index: 99999; }
+  @media screen and (min-width: 1080px) {
+    .popup-wrapper {
+      opacity: .8; } }
   .popup-wrapper .popup {
     position: fixed;
-    top: 25%;
-    left: 25%;
-    height: 100px;
-    width: 900px;
+    width: 100%;
+    height: 100%;
     background: white;
-    overflow: auto; }
+    overflow: auto;
+    opacity: 1; }
+    @media screen and (min-width: 1080px) {
+      .popup-wrapper .popup {
+        top: 25%;
+        left: 25%;
+        height: 100px;
+        width: 900px; } }
+    .popup-wrapper .popup .close-btn {
+      cursor: pointer;
+      font-weight: 600;
+      color: white;
+      background: #fb286f;
+      width: 2rem;
+      height: 2rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      border-radius: 5px;
+      border: 0;
+      padding: .25rem;
+      position: absolute;
+      top: .5rem;
+      right: .5rem;
+      -webkit-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out; }
+      .popup-wrapper .popup .close-btn:hover {
+        background: #ba0341; }
+    .popup-wrapper .popup .popup-project-title {
+      padding: 0 1.5rem;
+      margin-top: 3.5rem; }
+      .popup-wrapper .popup .popup-project-title h3 {
+        text-align: center;
+        margin-bottom: 2rem;
+        padding: .5rem 0;
+        border-top: 2px solid #62a9c7;
+        border-bottom: 2px solid #62a9c7; }
+        @media screen and (min-width: 600px) {
+          .popup-wrapper .popup .popup-project-title h3 {
+            margin-bottom: 2rem; } }
+        @media screen and (min-width: 1080px) {
+          .popup-wrapper .popup .popup-project-title h3 {
+            margin-bottom: 3rem; } }
+    .popup-wrapper .popup .popup-project-intro {
+      padding: 0 1.5rem; }
+      .popup-wrapper .popup .popup-project-intro p {
+        margin-bottom: 1rem; }
+        .popup-wrapper .popup .popup-project-intro p:last-child {
+          margin-bottom: 2rem; }
+      .popup-wrapper .popup .popup-project-intro .popup-project-img {
+        margin: 1.5rem auto; }
+    .popup-wrapper .popup .popup-project-description {
+      background: #e5e4f0;
+      padding-top: 2rem;
+      padding-bottom: 2rem; }
+      .popup-wrapper .popup .popup-project-description h4 {
+        font-size: 24px;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 3px;
+        color: #fb286f;
+        margin: 0 1.5rem 2rem 1.5rem;
+        text-align: center;
+        font-family: "Chelsea Market", sans-serif; }
+        @media screen and (min-width: 600px) {
+          .popup-wrapper .popup .popup-project-description h4 {
+            font-size: 24px;
+            font-size: 1.5rem; } }
+        @media screen and (min-width: 1080px) {
+          .popup-wrapper .popup .popup-project-description h4 {
+            font-size: 32px;
+            font-size: 2rem; } }
+      .popup-wrapper .popup .popup-project-description .popup-image-wrapper {
+        margin: .5rem auto;
+        padding: 0 1.5rem; }
+      .popup-wrapper .popup .popup-project-description p {
+        padding: 1rem 0;
+        margin: 0 1.5rem; }
+      .popup-wrapper .popup .popup-project-description span {
+        font-weight: 600; }
+    .popup-wrapper .popup .popup-buttons {
+      padding: 2rem 1.5rem;
+      background: #a6d0e0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .popup-wrapper .popup .popup-buttons .popup-project-link, .popup-wrapper .popup .popup-buttons .popup-github-link {
+        background: white;
+        margin: 0 auto 1rem auto;
+        font-size: 16px;
+        font-size: 1rem;
+        padding: .5rem 1rem;
+        text-transform: uppercase;
+        border-radius: 5px;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out; }
+        .popup-wrapper .popup .popup-buttons .popup-project-link:hover, .popup-wrapper .popup .popup-buttons .popup-github-link:hover {
+          background: #032a47;
+          color: white; }
+      .popup-wrapper .popup .popup-buttons .popup-github-link {
+        margin-bottom: 0; }
 
 .site-footer {
   background: -webkit-gradient(linear, left top, left bottom, from(#62a9c7), to(rgba(98, 169, 199, 0.6))), url("../../images/footer-background.jpg") top center no-repeat;

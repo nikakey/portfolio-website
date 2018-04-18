@@ -31,3 +31,9 @@ img {
 	height: auto; /* Make sure images are scaled correctly. */
 	width: 100%; /* Adhere to container width. */
 }
+
+hr {
+  display: block;
+  margin: .25rem 1.5rem;
+  border: $border__solid;
+}

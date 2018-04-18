@@ -8,6 +8,7 @@ select,
 textarea {
 	font-family: $font__main;
 	line-height: $font__line-height-body;
+	@include font-size(1);
 }
 
 /* HEADINGS */
