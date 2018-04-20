@@ -78,8 +78,24 @@ $(document).ready(function(){
 
   $('.project-title').on('click', function(e) {
     e.preventDefault();
-    $('.popup-wrapper').css('display', 'block');
-    $('body').css('overflow', 'hidden'); 
+    var elemId = $(this).attr('id');
+    console.log(elemId);
+    if(elemId == 'quotes') {
+      $('#quotes-popup').css('display', 'block');
+      $('body').css('overflow', 'hidden');
+    }
+    else if(elemId == 'starfish') {
+      $('#starfish-popup').css('display', 'block');
+      $('body').css('overflow', 'hidden');
+    }
+    else if(elemId == 'inhabitent') {
+      $('#inhabitent-popup').css('display', 'block');
+      $('body').css('overflow', 'hidden');
+    }
+    else if(elemId == 'pong') {
+      $('#pong-popup').css('display', 'block');
+      $('body').css('overflow', 'hidden');
+    }
   });
 
 });

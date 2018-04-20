@@ -36,4 +36,7 @@ hr {
   display: block;
   margin: .25rem 1.5rem;
   border: $border__solid;
+  @include tablet {
+    margin: .25rem 2rem;
+  }
 }

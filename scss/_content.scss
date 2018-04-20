@@ -7,37 +7,47 @@
   background-size: cover, cover;
   @include desktop {
     height: 100vh;
+    display: flex;
+    justify-content: space-between;
   }
-  h1 {
+  .banner-content {
     padding: 6rem 1.5rem 0 1.5rem;
-    text-align: center;
-    color: $color__main-basic;
-    width: 94%;
-    max-width: 400px;
+    max-width: 500px;
     @include center-block;
     @include desktop {
-      padding: 9rem 0 0 4rem;
       width: 46%;
       max-width: unset;
+      padding: 9rem 0rem 0 4rem;
+      margin: 0;
+    }
+  }
+  h1 {
+    text-align: center;
+    color: $color__main-basic;
+    @include desktop {
       text-align: right;
+      padding: 0;
       margin: 0;
     }
   }
   p {
     color: $color__main-basic;
     text-align: center;
-    width: 94%;
-    max-width: 400px;
-    @include center-block;
     padding: .5rem;
     @include font-size(1.125);
     @include desktop {
       @include font-size(1.25);
-      width: 46%;
-      max-width: unset;
       text-align: right;
       margin: 0;
-      padding: .5rem 0 .5rem 4rem;
+      padding: .5rem 0 .5rem 0;
+    }
+  }
+  .banner-img {
+    display: none;
+    @include desktop {
+      display: block;
+      width: 500px;
+      padding: 9rem 4rem 0 0;
     }
   }
 }

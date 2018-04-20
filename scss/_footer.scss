@@ -68,11 +68,29 @@
   }
   .copyright {
     position: absolute;
-    bottom: 2%;
+    bottom: 6%;
     p {
       color: $color__main-basic;
       @include font-size(.75);
     }
+    @include desktop {
+      bottom: 2%;
+    }
   }
-  
+  .icons-copyright {
+    margin-top: .25rem;
+    color: $color__main-basic;
+    position: absolute;
+    bottom: 2%;
+    @include font-size(.65);
+    @include desktop {
+      @include font-size(.75);
+      margin-top: 0;
+      right: 4rem;
+    }
+    a {
+      text-decoration: underline;
+      color: $color__main-basic;
+    }
+  }
 }
