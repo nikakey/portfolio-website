@@ -76,7 +76,7 @@ $(document).ready(function(){
     $('body').css('overflow', 'auto');
   });
 
-  $('.project-title').on('click', function(e) {
+  $('.project-title').on('click enter', function(e) {
     e.preventDefault();
     var elemId = $(this).attr('id');
     console.log(elemId);
@@ -96,7 +96,18 @@ $(document).ready(function(){
       $('#pong-popup').css('display', 'block');
       $('body').css('overflow', 'hidden');
     }
+    else if(elemId == 'instanews') {
+      $('#instanews-popup').css('display', 'block');
+      $('body').css('overflow', 'hidden');
+    }
+    else if(elemId == 'aloha') {
+      $('#aloha-popup').css('display', 'block');
+      $('body').css('overflow', 'hidden');
+    }
+  })
+  .on('keypress', function(e) {
+    if(e.which === 13) {
+        $(this).trigger( 'enter' );
+    }
   });
-
 });
-

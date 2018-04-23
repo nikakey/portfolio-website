@@ -1,15 +1,18 @@
 .site-footer {
-  background: linear-gradient(rgba($color__brand-dark,1),rgba($color__brand-dark,0.6)), url("../../images/footer-background.jpg") top center no-repeat;
-  background-size: 100%, cover;
+  background: linear-gradient(rgba($color__brand-dark,1),rgba($color__brand-dark,0.6)), url("../../images/ufo.svg") no-repeat, url("../../images/footer-background.jpg") no-repeat;
+  background-size: 100%, 30px, cover;
+  background-position: center, 8% 60%, top center;
   height: 400px;
   padding: 1.5rem;
   position: relative;
   @include tablet {
-    background-position: center;
+    background-position: center, 8% 60%, center;
+    background-size: 100%, 50px, cover;
     padding: 1.5rem 2rem;
   }
   @include desktop {
     padding: 2rem 4rem;
+    background-size: 100%, 80px, cover;
   }
   .contacts {
     text-align: center;

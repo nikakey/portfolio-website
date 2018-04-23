@@ -5,19 +5,32 @@
   height: 400px;
   background: linear-gradient(rgba($color__brand-dark,1),rgba($color__brand-dark,0.6)), url("../../images/site-banner.jpg") bottom center no-repeat;
   background-size: cover, cover;
+  position: relative;
   @include desktop {
     height: 100vh;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
   }
   .banner-content {
     padding: 6rem 1.5rem 0 1.5rem;
     max-width: 500px;
     @include center-block;
+    @include tablet {
+      z-index: 55;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 0;
+    }
     @include desktop {
+      position: initial;
+      top: unset;
+      left: unset;
+      transform: unset;
       width: 46%;
       max-width: unset;
-      padding: 9rem 0rem 0 4rem;
+      padding: 0 0 0 4rem;
       margin: 0;
     }
   }
@@ -44,13 +57,34 @@
   }
   .banner-img {
     display: none;
-    @include desktop {
+    @include tablet {
       display: block;
-      width: 500px;
-      padding: 9rem 4rem 0 0;
+      max-width: 300px;
+      position: absolute;
+      top: 20%;
+      right: 20%;
+      width: 20%;
+      animation: flying-tablet 5s infinite alternate ease-in-out;
+    }
+    @include desktop {
+      top: 15%;
+      max-width: 400px;
+      width: 30%;
+      right: 15%;
     }
   }
 }
+
+@keyframes flying-tablet {
+  0% {transform: translate(0px, 0px) rotate(0deg) scale(.2)}
+  20% {transform: translate(0px, 0px) rotate(0deg) scale(.2)}
+  40% {transform: translate(20px, 50px) rotate(-10deg) scale(1)}
+  60% {transform: translate(20px, 50px) rotate(10deg) scale(1)}
+  95% {transform: translate(100px, -50px) rotate(10deg) scale(.2)}
+  100% {transform: translate(100px, -50px) rotate(10deg) scale(.2)}
+}
+
+
 
 /**** SKILLS AREA ****/
 

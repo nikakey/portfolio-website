@@ -130,7 +130,7 @@
 
 				<div class="project-wrapper">
 					
-					<div class="project-title" id="starfish">
+					<div class="project-title" id="starfish" tabindex="0">
 						<h4>The Starfish Canada</h4>
 					</div>
 					<div class="project-description">
@@ -142,7 +142,7 @@
 
 				<div class="project-wrapper">
 					
-					<div class="project-title" id="quotes">
+					<div class="project-title" id="quotes" tabindex="0">
 						<h4>Quotes On Dev</h4>
 					</div>
 					<div class="project-description">
@@ -154,7 +154,7 @@
 
 				<div class="project-wrapper">
 
-					<div class="project-title" id="inhabitent">
+					<div class="project-title" id="inhabitent" tabindex="0">
 						<h4>Inhabitent Camping Supply</h4>
 					</div>
 					<div class="project-description">
@@ -166,7 +166,7 @@
 
 				<div class="project-wrapper">
 
-					<div class="project-title" id="pong">
+					<div class="project-title" id="pong" tabindex="0">
 						<h4>Pong Game</h4>
 					</div>
 					<div class="project-description">
@@ -177,9 +177,9 @@
 
 				<div class="project-wrapper">
 
-					<a href="https://nikakey.github.io/Instanews/" target="_blank" class="project-title" id="instanews">
+					<div class="project-title" id="instanews" tabindex="0">
 						<h4>Instanews</h4>
-					</a>
+					</div>
 					<div class="project-description">
 						<p>Responsive website that allows a user to filter 6 top news story categories via the New York Times API.</p>
 						<a href="https://github.com/nikakey/Instanews" target="_blank" class="works-btn">Code on GitHub</a>
@@ -189,9 +189,9 @@
 
 				<div class="project-wrapper">
 
-					<a href="https://nikakey.github.io/Aloha-Homepage/" target="_blank" class="project-title" id="aloha">
+					<div class="project-title" id="aloha" tabindex="0">
 						<h4>Aloha Apparel</h4>
-					</a>
+					</div>
 					<div class="project-description">
 						<p>Sample of a responsive site homepage created using HTML5, CSS3, and jQuery.</p>
 						<a href="https://github.com/nikakey/Aloha-Homepage" target="_blank" class="works-btn">Code on GitHub</a>
@@ -229,8 +229,12 @@
 
 		<div id="quotes-popup" class="popup-wrapper">
 			<div class="popup">
+				<button class="close-btn" aria-label="Close">X</button>
 				<div class="popup-project-title">
 					<h3>Quotes On Dev</h3>
+				</div>
+				<div class="popup-top-button">
+					<a href="https://github.com/nikakey/Quotes-on-Dev" target="_blank" class="popup-github-link">Code on GitHub</a>
 				</div>
 				<div class="popup-project-intro">
 					<p>This is a WordPress theme for the Quotes on Dev website, which is created combining JavaScript and WordPress. The website is functioning using the WordPress REST API.</p>
@@ -260,141 +264,229 @@
 				<div class="popup-buttons">
 						<a href="https://github.com/nikakey/Quotes-on-Dev" target="_blank" class="popup-github-link">Code on GitHub</a>
 				</div>
-				<button class="close-btn" aria-label="Close">X</button>
 			</div>
 		</div><!--#quotes-popup ends-->
 
 		<!-- Starfish Popup -->
 
 		<div id="starfish-popup" class="popup-wrapper">
-				<div class="popup">
-					<div class="popup-project-title">
-						<h3>The Starfish Canada</h3>
-					</div>
-					<div class="popup-project-intro">
-						<p>This is a new website for The Starfish Canada – a volunteer-run non-profit environmental organization.</p>
-						<div class="popup-project-img">
-							<img src="images/popups/starfish/starfish-screen.png" alt="Screenshot of the site" />
-						</div>
-						<p>The site is developed using WordPress as a CMS, with a mobile-first approach and optimized for the desktop screen size.</p>
-					</div>
-					
-					<div class="popup-project-description">
-						<h4>Project Key Points</h4>
-						<hr>
-						<p>I created The Starfish Canada website as a member of a development team.</p>
-						<p>We built a custom WordPress theme for the website, using JavaScript, jQuery, Sass, Gulp, Git, PHP, and Ajax.</p>
-						<div class="popup-image-wrapper">
-							<img src="images/popups/starfish/starfish-screen-footer.png" alt="Screenshot of the site" />
-						</div>
-						<h4 class="popup-subtitle">My personal contribution to the project includes </h4>
-						<hr>
-						<p>Creating custom post types and taxonomies.</p>
-						<hr>
-						<p>Developing and styling several website pages.</p>
-						<hr>
-						<p>Creating fully customizable carousels for different pages.</p>
-						<div class="popup-gif-wrapper">
-							<img src="images/popups/starfish/starfish-carousel-gif.gif" alt="Carousel gif" />
-						</div>
-					</div>
-					<div class="popup-buttons">
-							<a href="http://starfish.van.cp.academy.red/" target="_blank" class="popup-project-link">Visit Website</a>
-							<a href="https://github.com/nikakey/starfish-winter-2018" target="_blank" class="popup-github-link">Code on GitHub</a>
-					</div>
-					<button class="close-btn" aria-label="Close">X</button>
+			<div class="popup">
+				<button class="close-btn" aria-label="Close">X</button>
+				<div class="popup-project-title">
+					<h3>The Starfish Canada</h3>
 				</div>
-			</div><!--#starfish-popup ends-->
-
-			<!-- Inhabitent Popup -->
-
-			<div id="inhabitent-popup" class="popup-wrapper">
-					<div class="popup">
-						<div class="popup-project-title">
-							<h3>Inhabitent Camping Supply</h3>
-						</div>
-						<div class="popup-project-intro">
-							<p>This is a custom WordPress theme for the website of a camping supply company.</p>
-							<div class="popup-project-img">
-								<img src="images/popups/inhabitent/inhabitent-screen.png" alt="Screenshot of the site" />
-							</div>
-							<p>The website contains blog posts, product descriptions, a custom static homepage, About page, and Contact page.</p>
-						</div>
-						
-						<div class="popup-project-description">
-							<h4>Project Key Points</h4>
-							<hr>
-							<p>I created custom page templates, and custom post types and taxonomies inside of the functionality plugin.</p>
-							<div class="popup-image-wrapper">
-								<img src="images/popups/inhabitent/inhabitent-screen-products.png" alt="Screenshot of the site" />
-							</div>
-							<hr>
-							<p>I added custom fields for additional metadata.</p>
-							<div class="popup-image-wrapper">
-								<img src="images/popups/inhabitent/inhabitent-screen-journal.png" alt="Screenshot of the site" />
-							</div>
-							<hr>
-							<p>I included a custom widget plugin for business hours, featured in the sidebar of the site.</p>
-							<hr>
-							<p>Also, there is a toggle-able search form in the site header where the search input is automatically focused when the form is toggled open.</p>
-							<div class="popup-gif-wrapper">
-								<img src="images/popups/inhabitent/inhabitent-search-gif.gif" alt="Search toggle gif" />
-							</div>
-						</div>
-						<div class="popup-buttons">
-								<a href="https://github.com/nikakey/Inhabitent" target="_blank" class="popup-github-link">Code on GitHub</a>
-						</div>
-						<button class="close-btn" aria-label="Close">X</button>
+				<div class="popup-top-button">
+					<a href="http://starfish.van.cp.academy.red/" target="_blank" class="popup-project-link">Visit Website</a>
+				</div>
+				<div class="popup-project-intro">
+					<p>This is a new website for The Starfish Canada – a volunteer-run non-profit environmental organization.</p>
+					<div class="popup-project-img">
+						<img src="images/popups/starfish/starfish-screen.png" alt="Screenshot of the site" />
 					</div>
-				</div><!--#inhabitent-popup ends-->
+					<p>The site is developed using WordPress as a CMS, with a mobile-first approach and optimized for the desktop screen size.</p>
+				</div>
+				
+				<div class="popup-project-description">
+					<h4>Project Key Points</h4>
+					<hr>
+					<p>I created The Starfish Canada website as a member of a development team.</p>
+					<p>We built a custom WordPress theme for the website, using JavaScript, jQuery, Sass, Gulp, Git, PHP, and Ajax.</p>
+					<div class="popup-image-wrapper">
+						<img src="images/popups/starfish/starfish-screen-footer.png" alt="Screenshot of the site" />
+					</div>
+					<h4 class="popup-subtitle">My personal contribution to the project includes </h4>
+					<hr>
+					<p>Creating custom post types and taxonomies.</p>
+					<hr>
+					<p>Developing and styling several website pages.</p>
+					<hr>
+					<p>Creating fully customizable carousels for different pages.</p>
+					<div class="popup-gif-wrapper">
+						<img src="images/popups/starfish/starfish-carousel-gif.gif" alt="Carousel gif" />
+					</div>
+				</div>
+				<div class="popup-buttons">
+					<a href="http://starfish.van.cp.academy.red/" target="_blank" class="popup-project-link">Visit Website</a>
+					<a href="https://github.com/nikakey/starfish-winter-2018" target="_blank" class="popup-github-link">Code on GitHub</a>
+				</div>
+			</div>
+		</div><!--#starfish-popup ends-->
 
-				<!-- Pong Popup -->
+		<!-- Inhabitent Popup -->
 
-				<div id="pong-popup" class="popup-wrapper">
-						<div class="popup">
-							<div class="popup-project-title">
-								<h3>Pong Game</h3>
-							</div>
-							<div class="popup-project-intro">
-								<p>This is a pong game for two players using SVGs and Object Oriented JavaScript.</p>
-								<div class="popup-project-img">
-									<img src="images/projects/pong-bg.png" alt="Screenshot of the pong game" />
-								</div>
-								<p>The project is loaded using Webpack.</p>
-							</div>
-							
-							<div class="popup-project-description">
-								<h4>Project Key Points</h4>
-								<hr>
-								<p>Board size: 768px x 384px.</p>
-								<hr>
-								<p>The ball hits a paddle with a sound.</p>
-								<hr>
-								<p>The game starts with an opening screen with instructions for players. They can start the game by pressing the Shift key.</p>
-								<div class="popup-image-wrapper">
-									<img src="images/popups/pong/screen-shot-open-screen.png" alt="Screenshot of the game" />
-								</div>
-								<hr>
-								<p>The game has 3 levels that differ in the speed of the ball: 8, 10 and 12. Each level ends when one of the players gets 10 points.</p>
-								<hr>
-								<p>Before the beginning of each level, players see a screen with a level number and a countdown starting at 5.</p>
-								<hr>
-								<p>After the end of each level, players see a screen with the name of the current level winner. They can continue the game by pressing the Shift key.</p>
-								<hr>
-								<p>Players can pause the game by pressing the Spacebar. When the game is paused, players cannot move paddles, the ball stops where it was when the Spacebar was pressed, and all the board is darkened. Players see a screen telling them that the game is paused. They can continue the game by pressing the Spacebar again.</p>
-								<div class="popup-image-wrapper">
-									<img src="images/popups/pong/screen-shot-pause-screen.png" alt="Screenshot of the game" />
-								</div>
-								<hr>
-								<p>After the 3rd level, the game ends. Players see the screen with the name of the winner of the whole game round. The winner of the game is the player who won in two levels of three.</p>
-							</div>
-							<div class="popup-buttons">
-									<a href="https://nikakey.github.io/Pong-Game/" target="_blank" class="popup-project-link">Play the Game</a>
-									<a href="https://github.com/nikakey/Pong-Game" target="_blank" class="popup-github-link">Code on GitHub</a>
-							</div>
-							<button class="close-btn" aria-label="Close">X</button>
-						</div>
-					</div><!--#pong-popup ends-->
+		<div id="inhabitent-popup" class="popup-wrapper">
+			<div class="popup">
+				<button class="close-btn" aria-label="Close">X</button>
+				<div class="popup-project-title">
+					<h3>Inhabitent Camping Supply</h3>
+				</div>
+				<div class="popup-top-button">
+					<a href="https://github.com/nikakey/Inhabitent" target="_blank" class="popup-github-link">Code on GitHub</a>
+				</div>
+				<div class="popup-project-intro">
+					<p>This is a custom WordPress theme for the website of a camping supply company.</p>
+					<div class="popup-project-img">
+						<img src="images/popups/inhabitent/inhabitent-screen.png" alt="Screenshot of the site" />
+					</div>
+					<p>The website contains blog posts, product descriptions, a custom static homepage, About page, and Contact page.</p>
+				</div>
+				
+				<div class="popup-project-description">
+					<h4>Project Key Points</h4>
+					<hr>
+					<p>I created custom page templates, and custom post types and taxonomies inside of the functionality plugin.</p>
+					<div class="popup-image-wrapper">
+						<img src="images/popups/inhabitent/inhabitent-screen-products.png" alt="Screenshot of the site" />
+					</div>
+					<hr>
+					<p>I added custom fields for additional metadata.</p>
+					<div class="popup-image-wrapper">
+						<img src="images/popups/inhabitent/inhabitent-screen-journal.png" alt="Screenshot of the site" />
+					</div>
+					<hr>
+					<p>I included a custom widget plugin for business hours, featured in the sidebar of the site.</p>
+					<hr>
+					<p>Also, there is a toggle-able search form in the site header where the search input is automatically focused when the form is toggled open.</p>
+					<div class="popup-gif-wrapper">
+						<img src="images/popups/inhabitent/inhabitent-search-gif.gif" alt="Search toggle gif" />
+					</div>
+				</div>
+				<div class="popup-buttons">
+					<a href="https://github.com/nikakey/Inhabitent" target="_blank" class="popup-github-link">Code on GitHub</a>
+				</div>
+			</div>
+		</div><!--#inhabitent-popup ends-->
+
+		<!-- Pong Popup -->
+
+		<div id="pong-popup" class="popup-wrapper">
+			<div class="popup">
+				<button class="close-btn" aria-label="Close">X</button>
+				<div class="popup-project-title">
+					<h3>Pong Game</h3>
+				</div>
+				<div class="popup-top-button">
+					<a href="https://nikakey.github.io/Pong-Game/" target="_blank" class="popup-project-link">Play the Game</a>
+				</div>
+				<div class="popup-project-intro">
+					<p>This is a pong game for two players using SVGs and Object Oriented JavaScript.</p>
+					<div class="popup-project-img">
+						<img src="images/projects/pong-bg.png" alt="Screenshot of the pong game" />
+					</div>
+					<p>The project is loaded using Webpack.</p>
+				</div>
+				
+				<div class="popup-project-description">
+					<h4>Project Key Points</h4>
+					<hr>
+					<p>Board size: 768px x 384px.</p>
+					<hr>
+					<p>The ball hits a paddle with a sound.</p>
+					<hr>
+					<p>The game starts with an opening screen with instructions for players. They can start the game by pressing the Shift key.</p>
+					<div class="popup-image-wrapper">
+						<img src="images/popups/pong/screen-shot-open-screen.png" alt="Screenshot of the game" />
+					</div>
+					<hr>
+					<p>The game has 3 levels that differ in the speed of the ball: 8, 10 and 12. Each level ends when one of the players gets 10 points.</p>
+					<hr>
+					<p>Before the beginning of each level, players see a screen with a level number and a countdown starting at 5.</p>
+					<hr>
+					<p>After the end of each level, players see a screen with the name of the current level winner. They can continue the game by pressing the Shift key.</p>
+					<hr>
+					<p>Players can pause the game by pressing the Spacebar. When the game is paused, players cannot move paddles, the ball stops where it was when the Spacebar was pressed, and all the board is darkened. Players see a screen telling them that the game is paused. They can continue the game by pressing the Spacebar again.</p>
+					<div class="popup-image-wrapper">
+						<img src="images/popups/pong/screen-shot-pause-screen.png" alt="Screenshot of the game" />
+					</div>
+					<hr>
+					<p>After the 3rd level, the game ends. Players see the screen with the name of the winner of the whole game round. The winner of the game is the player who won in two levels of three.</p>
+				</div>
+				<div class="popup-buttons">
+					<a href="https://nikakey.github.io/Pong-Game/" target="_blank" class="popup-project-link">Play the Game</a>
+					<a href="https://github.com/nikakey/Pong-Game" target="_blank" class="popup-github-link">Code on GitHub</a>
+				</div>
+			</div>
+		</div><!--#pong-popup ends-->
+
+		<!-- Instanws Popup -->
+
+		<div id="instanews-popup" class="popup-wrapper">
+			<div class="popup">
+				<button class="close-btn" aria-label="Close">X</button>
+				<div class="popup-project-title">
+					<h3>Instanews App</h3>
+				</div>
+				<div class="popup-top-button">
+					<a href="https://nikakey.github.io/Instanews/" target="_blank" class="popup-project-link">Visit Website</a>
+				</div>
+				<div class="popup-project-intro">
+					<p>This is a single-page resposive website that allows a user to filter 6 top news story categories via the New York Times API.</p>
+					<div class="popup-project-img">
+						<img src="images/popups/instanews/instanews-screen.png" alt="Screenshot of the site" />
+					</div>
+					<p>The site is optimized for mobile, tablet (600px), and desktop (1000px) screens.</p>
+				</div>
+				
+				<div class="popup-project-description">
+					<h4>Project Key Points</h4>
+					<hr>
+					<p>The site is styled using Sass as a preprocessor.</p>
+					<hr>
+					<p>Project is handled by Gulp to compile Sass and check errors.</p>
+					<hr>
+					<p>I used Ajax to retrieve data from the NYT Top Stories.</p>
+					<div class="popup-image-wrapper">
+						<img src="images/popups/instanews/instanews-screen-2.png" alt="Screenshot of the site" />
+					</div>
+				</div>
+				<div class="popup-buttons">
+					<a href="https://nikakey.github.io/Instanews/" target="_blank" class="popup-project-link">Visit Website</a>
+					<a href="https://github.com/nikakey/Instanews" target="_blank" class="popup-github-link">Code on GitHub</a>
+				</div>
+			</div>
+		</div><!--#instanews-popup ends-->
+
+		<!-- Aloha Popup -->
+
+		<div id="aloha-popup" class="popup-wrapper">
+			<div class="popup">
+				<button class="close-btn" aria-label="Close">X</button>
+				<div class="popup-project-title">
+					<h3>Alloha Apparel Co.</h3>
+				</div>
+				<div class="popup-top-button">
+					<a href="https://nikakey.github.io/Aloha-Homepage/" target="_blank" class="popup-project-link">Visit Website</a>
+				</div>
+				<div class="popup-project-intro">
+					<p>This is a sample of  an online shop homepage.</p>
+					<div class="popup-project-img">
+						<img src="images/popups/aloha/aloha-screen.png" alt="Screenshot of the site" />
+					</div>
+					<p>The site is created using HTML5, CSS3, and jQuery for smooth scrolling and basic click counter.</p>
+				</div>
+				
+				<div class="popup-project-description">
+					<h4>Project Key Points</h4>
+					<hr>
+					<p>The site was built with mobile-first approach and optimized for two additional screen sizes: tablet (600px) and desktop (1240px).</p>
+					<hr>
+					<p>I added an image slider (Flickity Carousel).</p>
+					<hr>
+					<p>An email address validation is installed into the subscription form.</p>
+					<hr>
+					<p>I added smooth scrolling for the navigation menu.</p>
+					<hr>
+					<p>I implemented an interactive cart filling (a basic click counter) using jQuery.</p>
+					<div class="popup-gif-wrapper">
+						<img src="images/popups/aloha/aloha-gif.gif" alt="Gif of the click counter" />
+					</div>
+				</div>
+				<div class="popup-buttons">
+					<a href="https://nikakey.github.io/Aloha-Homepage/" target="_blank" class="popup-project-link">Visit Website</a>
+					<a href="https://github.com/nikakey/Aloha-Homepage" target="_blank" class="popup-github-link">Code on GitHub</a>
+				</div>
+			</div>
+		</div><!--#aloha-popup ends-->
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="services/jquery.slicknav.min.js"></script>

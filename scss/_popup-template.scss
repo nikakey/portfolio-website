@@ -44,6 +44,23 @@
         background: darken($color__brand-light-third, 20)
       }
     }
+    .popup-top-button {
+      padding: 2rem 1.5rem;
+      background: $color__brand-dark-second;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem; 
+      @include tablet {
+        flex-direction: row;
+        justify-content: center;
+      }
+      .popup-project-link {
+        margin: 0 auto;
+      }
+      .popup-github-link {
+        margin: 0 auto;
+      }
+    }
     .popup-project-title {
       padding: 0 1.5rem;
       margin-top: 3.5rem;
@@ -171,26 +188,26 @@
         flex-direction: row;
         justify-content: center;
       }
-      .popup-project-link {
-        background: $color__main-basic;
-        margin: 0 auto 1rem auto;
-        @include font-size(1);
-        padding: .5rem 1rem;
-        text-transform: uppercase;
-        border-radius: 5px;
-        transition: all .2s ease-in-out;
-        @include tablet {
-          margin-bottom: 0;
-        }
-        &:hover {
-          background: $color__main-text;
-          color: $color__main-basic;
-        } 
-      }
-      .popup-github-link {
-        @extend .popup-project-link;
+    }
+    .popup-project-link {
+      background: $color__main-basic;
+      margin: 0 auto 1rem auto;
+      @include font-size(1);
+      padding: .5rem 1rem;
+      text-transform: uppercase;
+      border-radius: 5px;
+      transition: all .2s ease-in-out;
+      @include tablet {
         margin-bottom: 0;
       }
+      &:hover {
+        background: $color__main-text;
+        color: $color__main-basic;
+      } 
+    }
+    .popup-github-link {
+      @extend .popup-project-link;
+      margin-bottom: 0;
     }
   }
 }
