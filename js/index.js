@@ -79,33 +79,32 @@ $(document).ready(function(){
   $('.project-title').on('click enter', function(e) {
     e.preventDefault();
     var elemId = $(this).attr('id');
-    console.log(elemId);
-    if(elemId == 'quotes') {
+    if(elemId === 'quotes') {
       $('#quotes-popup').css('display', 'block');
       $('body').css('overflow', 'hidden');
       $('.close-btn').focus();
     }
-    else if(elemId == 'starfish') {
+    else if(elemId === 'starfish') {
       $('#starfish-popup').css('display', 'block');
       $('body').css('overflow', 'hidden');
       $('.close-btn').focus();
     }
-    else if(elemId == 'inhabitent') {
+    else if(elemId === 'inhabitent') {
       $('#inhabitent-popup').css('display', 'block');
       $('body').css('overflow', 'hidden');
       $('.close-btn').focus();
     }
-    else if(elemId == 'pong') {
+    else if(elemId === 'pong') {
       $('#pong-popup').css('display', 'block');
       $('body').css('overflow', 'hidden');
       $('.close-btn').focus();
     }
-    else if(elemId == 'instanews') {
+    else if(elemId === 'instanews') {
       $('#instanews-popup').css('display', 'block');
       $('body').css('overflow', 'hidden');
       $('.close-btn').focus();
     }
-    else if(elemId == 'aloha') {
+    else if(elemId === 'aloha') {
       $('#aloha-popup').css('display', 'block');
       $('body').css('overflow', 'hidden');
       $('.close-btn').focus();
