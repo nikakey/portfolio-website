@@ -224,7 +224,7 @@
     height: auto;
     display: none;
     background: url("../../images/about-bg.jpg") center no-repeat;
-    background-size: cover, cover;
+    background-size: cover;
     @include desktop {
       display: block;
       width: 50%;
