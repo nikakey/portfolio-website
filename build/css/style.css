@@ -377,11 +377,11 @@ a {
         max-width: unset;
         padding: 0 0 0 4rem;
         margin: 0; } }
-  .site-banner h1 {
+  .site-banner h2 {
     text-align: center;
     color: white; }
     @media screen and (min-width: 1080px) {
-      .site-banner h1 {
+      .site-banner h2 {
         text-align: right;
         padding: 0;
         margin: 0; } }
