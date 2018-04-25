@@ -189,8 +189,12 @@
         justify-content: center;
       }
     }
-    .popup-project-link {
+    .popup-project-link,
+    .popup-project-link:visited,
+    .popup-project-link:focus,
+    .popup-project-link:active {
       background: $color__main-basic;
+      color: $color__main-text;
       margin: 0 auto 1rem auto;
       @include font-size(1);
       padding: .5rem 1rem;

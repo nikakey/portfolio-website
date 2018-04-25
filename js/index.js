@@ -31,19 +31,19 @@ $(document).ready(function(){
 
       if (target.length) {
         event.preventDefault();
-        $('html, body').animate({scrollTop: targetOffset - headerHeight}, 1000 
-          //function() {
-          // Callback after animation
-          // Must change focus!
-          // var $target = $(target);
-          // $target.focus();
-          // console.log($target);
-          // if ($target.is(":focus")) { // Checking if the target was focused
-          //   return false;
-          // } else {
-          //   $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-          //   $target.focus(); // Set focus again
-          // };}
+        $('html, body').animate({scrollTop: targetOffset - headerHeight}, 1000, 
+          function() {
+            //Callback after animation
+            // Must change focus!
+            var $target = $(target);
+            $target.focus();
+            // if ($target.is(":focus")) { // Checking if the target was focused
+            //   return false;
+            // } else {
+            //   $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            //   $target.focus(); // Set focus again
+            //}
+          }
         );
       }
     }
@@ -83,26 +83,32 @@ $(document).ready(function(){
     if(elemId == 'quotes') {
       $('#quotes-popup').css('display', 'block');
       $('body').css('overflow', 'hidden');
+      $('.close-btn').focus();
     }
     else if(elemId == 'starfish') {
       $('#starfish-popup').css('display', 'block');
       $('body').css('overflow', 'hidden');
+      $('.close-btn').focus();
     }
     else if(elemId == 'inhabitent') {
       $('#inhabitent-popup').css('display', 'block');
       $('body').css('overflow', 'hidden');
+      $('.close-btn').focus();
     }
     else if(elemId == 'pong') {
       $('#pong-popup').css('display', 'block');
       $('body').css('overflow', 'hidden');
+      $('.close-btn').focus();
     }
     else if(elemId == 'instanews') {
       $('#instanews-popup').css('display', 'block');
       $('body').css('overflow', 'hidden');
+      $('.close-btn').focus();
     }
     else if(elemId == 'aloha') {
       $('#aloha-popup').css('display', 'block');
       $('body').css('overflow', 'hidden');
+      $('.close-btn').focus();
     }
   })
   .on('keypress', function(e) {
