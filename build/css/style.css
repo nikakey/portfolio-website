@@ -899,7 +899,9 @@ a {
           .popup-wrapper .popup .popup-project-intro .popup-project-img {
             margin: 2rem auto; } }
         .popup-wrapper .popup .popup-project-intro .popup-project-img img {
-          border: 2px solid #62a9c7; }
+          border: 2px solid #62a9c7;
+          -webkit-box-shadow: 0 2px 3px #ccc;
+                  box-shadow: 0 2px 3px #ccc; }
     .popup-wrapper .popup .popup-project-description {
       background: #e5e4f0;
       padding-top: 2rem;
@@ -943,7 +945,9 @@ a {
             padding: 0 2rem;
             margin: 2rem auto; } }
         .popup-wrapper .popup .popup-project-description .popup-image-wrapper img {
-          border: 2px solid #62a9c7; }
+          border: 2px solid #62a9c7;
+          -webkit-box-shadow: 0 2px 3px #ccc;
+                  box-shadow: 0 2px 3px #ccc; }
       .popup-wrapper .popup .popup-project-description .popup-gif-wrapper {
         max-width: 480px;
         margin: .5rem auto;
@@ -953,7 +957,9 @@ a {
             padding: 0 2rem;
             margin: 2rem auto; } }
         .popup-wrapper .popup .popup-project-description .popup-gif-wrapper img {
-          border: 2px solid #62a9c7; }
+          border: 2px solid #62a9c7;
+          -webkit-box-shadow: 0 2px 3px #ccc;
+                  box-shadow: 0 2px 3px #ccc; }
       .popup-wrapper .popup .popup-project-description p {
         padding: 1rem 0;
         margin: 0 1.5rem; }
