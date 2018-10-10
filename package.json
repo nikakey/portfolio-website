@@ -10,7 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "atob": "^2.1.2",
+    "cryptiles": "^4.1.2",
     "hoek": "^5.0.4",
+    "macaddress": "^0.2.9",
     "mime": "^2.3.1",
     "npm": "^5.8.0",
     "randomatic": "^3.1.0"
