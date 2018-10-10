@@ -9,9 +9,11 @@
   "author": "veronika-kochetkova",
   "license": "ISC",
   "dependencies": {
+    "atob": "^2.1.2",
     "hoek": "^5.0.4",
     "mime": "^2.3.1",
-    "npm": "^5.8.0"
+    "npm": "^5.8.0",
+    "randomatic": "^3.1.0"
   },
   "devDependencies": {
     "browser-sync": "^2.23.6",
