@@ -115,7 +115,6 @@ html {
 body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
-  max-width: 1440px;
   margin: 0 auto; }
 
 img {
@@ -191,7 +190,6 @@ p {
   top: 0;
   z-index: 9999;
   width: 100%;
-  max-width: 1440px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
