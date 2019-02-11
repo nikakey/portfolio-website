@@ -190,12 +190,6 @@ p {
   top: 0;
   z-index: 9999;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding: 1.5rem;
   background: transparent;
   text-transform: uppercase;
@@ -207,6 +201,18 @@ p {
   @media screen and (min-width: 1080px) {
     .site-header {
       padding: 2rem 4rem; } }
+  .site-header .header-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    @media screen and (min-width: 1080px) {
+      .site-header .header-container {
+        padding: 0 4rem; } }
   .site-header .site-nav {
     display: none; }
     @media screen and (min-width: 1080px) {
@@ -340,17 +346,24 @@ a {
   height: 400px;
   background: -webkit-gradient(linear, left top, left bottom, from(#62a9c7), to(rgba(98, 169, 199, 0.6))), url("../../images/site-banner.jpg") bottom center no-repeat;
   background: linear-gradient(#62a9c7, rgba(98, 169, 199, 0.6)), url("../../images/site-banner.jpg") bottom center no-repeat;
-  background-size: cover, cover;
-  position: relative; }
+  background-size: cover, cover; }
   @media screen and (min-width: 1080px) {
     .site-banner {
-      height: 100vh;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; } }
+      height: 100vh; } }
+  .site-banner .banner-container {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 400px; }
+    @media screen and (min-width: 1080px) {
+      .site-banner .banner-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        height: 100vh; } }
   .site-banner .banner-content {
     padding: 6rem 1.5rem 0 1.5rem;
     max-width: 500px;

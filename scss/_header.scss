@@ -7,9 +7,6 @@
   top: 0;
   z-index: 9999;
   width: 100%;
-  // max-width: 1440px;
-  display: flex;
-  justify-content: space-between;
   padding: 1.5rem;
   background: transparent;
   text-transform: uppercase;
@@ -20,6 +17,15 @@
   }
   @include desktop {
     padding: 2rem 4rem;
+  }
+  .header-container {
+    max-width: 1440px;
+    @include center-block;
+    display: flex;
+    justify-content: space-between;
+    @include desktop {
+      padding: 0 4rem;
+    }
   }
   .site-nav {
     display: none;

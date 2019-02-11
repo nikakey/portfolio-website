@@ -5,11 +5,22 @@
   height: 400px;
   background: linear-gradient(rgba($color__brand-dark,1),rgba($color__brand-dark,0.6)), url("../../images/site-banner.jpg") bottom center no-repeat;
   background-size: cover, cover;
-  position: relative;
+  // position: relative;
   @include desktop {
     height: 100vh;
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
+  }
+  .banner-container {
+    position: relative;
+    max-width: 1440px;
+    @include center-block;
+    height: 400px;
+    @include desktop {
+      display: flex;
+      align-items: center;
+      height: 100vh;
+    }
   }
   .banner-content {
     padding: 6rem 1.5rem 0 1.5rem;
