@@ -194,25 +194,19 @@ p {
   background: transparent;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: white; }
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
   @media screen and (min-width: 600px) {
     .site-header {
       padding: 1.5rem 2rem; } }
   @media screen and (min-width: 1080px) {
     .site-header {
       padding: 2rem 4rem; } }
-  .site-header .header-container {
-    max-width: 1440px;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    @media screen and (min-width: 1080px) {
-      .site-header .header-container {
-        padding: 0 4rem; } }
   .site-header .site-nav {
     display: none; }
     @media screen and (min-width: 1080px) {
@@ -483,6 +477,9 @@ a {
       .my-skills .intro {
         padding: 5rem 4rem 7rem 4rem;
         border-bottom: 0; } }
+    .my-skills .intro .intro-container {
+      max-width: 1440px;
+      margin: 0 auto; }
     .my-skills .intro h3 {
       text-align: center;
       margin-bottom: 1rem; }
@@ -511,14 +508,17 @@ a {
   @media screen and (min-width: 600px) {
     .skills-wrapper {
       padding: 3rem 2rem; } }
-  @media screen and (min-width: 1080px) {
-    .skills-wrapper {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-      padding: 3rem 4rem 6rem 4rem; } }
+  .skills-wrapper .skills-container {
+    max-width: 1440px;
+    margin: 0 auto; }
+    @media screen and (min-width: 1080px) {
+      .skills-wrapper .skills-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        padding: 3rem 4rem 6rem 4rem; } }
   .skills-wrapper .skills {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -612,7 +612,8 @@ a {
     @media screen and (min-width: 1080px) {
       .about-me .my-img {
         display: block;
-        width: 50%; } }
+        width: 50%;
+        height: 500px; } }
   .about-me .about-desription h2 {
     color: #fb286f;
     text-transform: uppercase;
@@ -671,7 +672,9 @@ a {
     @media screen and (min-width: 1080px) {
       .my-works .projects-wrapper {
         -ms-flex-pack: distribute;
-            justify-content: space-around; } }
+            justify-content: space-around;
+        max-width: 1440px;
+        margin: 0 auto; } }
     .my-works .projects-wrapper .project-wrapper {
       display: -webkit-box;
       display: -ms-flexbox;

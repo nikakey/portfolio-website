@@ -12,20 +12,13 @@
   text-transform: uppercase;
   letter-spacing: $text__letter-spacing;
   color: $color__main-basic;
+  display: flex;
+  justify-content: space-between;
   @include tablet {
     padding: 1.5rem 2rem;
   }
   @include desktop {
     padding: 2rem 4rem;
-  }
-  .header-container {
-    max-width: 1440px;
-    @include center-block;
-    display: flex;
-    justify-content: space-between;
-    @include desktop {
-      padding: 0 4rem;
-    }
   }
   .site-nav {
     display: none;
